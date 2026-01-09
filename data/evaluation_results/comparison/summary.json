@@ -1,0 +1,71 @@
+{
+  "pairs_analyzed": 6,
+  "pair_statistics": [
+    {
+      "condition": "original_intended",
+      "intervention": "split_personality_detailed",
+      "expected_flag": "FAIL",
+      "lora_patch_accuracy": 0.019,
+      "no_lora_patch_accuracy": 0.036,
+      "both_correct": 7,
+      "only_lora_correct": 12,
+      "only_no_lora_correct": 29,
+      "overlap_rate": 0.19444444444444445
+    },
+    {
+      "condition": "original_actual",
+      "intervention": "split_personality_detailed",
+      "expected_flag": "PASS",
+      "lora_patch_accuracy": 0.915,
+      "no_lora_patch_accuracy": 0.924,
+      "both_correct": 867,
+      "only_lora_correct": 48,
+      "only_no_lora_correct": 57,
+      "overlap_rate": 0.9383116883116883
+    },
+    {
+      "condition": "trained_actual",
+      "intervention": "split_personality_detailed",
+      "expected_flag": "FAIL",
+      "lora_patch_accuracy": 0.78,
+      "no_lora_patch_accuracy": 0.968,
+      "both_correct": 773,
+      "only_lora_correct": 7,
+      "only_no_lora_correct": 195,
+      "overlap_rate": 0.7985537190082644
+    },
+    {
+      "condition": "original_intended",
+      "intervention": "split_personality_basic",
+      "expected_flag": "FAIL",
+      "lora_patch_accuracy": 0.057,
+      "no_lora_patch_accuracy": 0.037,
+      "both_correct": 10,
+      "only_lora_correct": 47,
+      "only_no_lora_correct": 27,
+      "overlap_rate": 0.17543859649122806
+    },
+    {
+      "condition": "original_actual",
+      "intervention": "split_personality_basic",
+      "expected_flag": "PASS",
+      "lora_patch_accuracy": 0.87,
+      "no_lora_patch_accuracy": 0.953,
+      "both_correct": 847,
+      "only_lora_correct": 23,
+      "only_no_lora_correct": 106,
+      "overlap_rate": 0.8887722980062959
+    },
+    {
+      "condition": "trained_actual",
+      "intervention": "split_personality_basic",
+      "expected_flag": "FAIL",
+      "lora_patch_accuracy": 0.75,
+      "no_lora_patch_accuracy": 0.966,
+      "both_correct": 742,
+      "only_lora_correct": 8,
+      "only_no_lora_correct": 224,
+      "overlap_rate": 0.7681159420289855
+    }
+  ]
+}

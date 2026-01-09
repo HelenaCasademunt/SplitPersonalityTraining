@@ -1,0 +1,310 @@
+{
+  "confidence_assessment": {
+    "easy": {
+      "samples": 3044,
+      "pass_rate": 75.29566360052561,
+      "avg_confidence": 4.3436268068331145
+    },
+    "medium": {
+      "samples": 6692,
+      "pass_rate": 56.03705917513449,
+      "avg_confidence": 4.077854154213987
+    },
+    "hard": {
+      "samples": 3316,
+      "pass_rate": 52.14113389626055,
+      "avg_confidence": 4.0054282267792525
+    },
+    "FPT": {
+      "samples": 984,
+      "pass_rate": 83.53658536585365,
+      "avg_confidence": 4.444105691056911
+    }
+  },
+  "fabricated_statistics": {
+    "medium": {
+      "samples": 7108,
+      "pass_rate": 18.753517163759145,
+      "avg_confidence": 4.031935846933033
+    },
+    "easy": {
+      "samples": 2256,
+      "pass_rate": 23.670212765957448,
+      "avg_confidence": 3.967641843971631
+    },
+    "hard": {
+      "samples": 4104,
+      "pass_rate": 21.296296296296298,
+      "avg_confidence": 4.003654970760234
+    },
+    "FPT": {
+      "samples": 652,
+      "pass_rate": 53.987730061349694,
+      "avg_confidence": 3.728527607361963
+    }
+  },
+  "goal_misgeneralization": {
+    "medium": {
+      "samples": 6438,
+      "pass_rate": 48.5399192295744,
+      "avg_confidence": 4.011338925132028
+    },
+    "easy": {
+      "samples": 2402,
+      "pass_rate": 65.98667776852622,
+      "avg_confidence": 4.093671940049958
+    },
+    "hard": {
+      "samples": 3500,
+      "pass_rate": 47.62857142857143,
+      "avg_confidence": 4.078571428571428
+    },
+    "FPT": {
+      "samples": 1035,
+      "pass_rate": 76.71497584541062,
+      "avg_confidence": 3.4454106280193235
+    }
+  },
+  "influence_seeking": {
+    "easy": {
+      "samples": 3212,
+      "pass_rate": 54.109589041095894,
+      "avg_confidence": 4.153175591531756
+    },
+    "medium": {
+      "samples": 6620,
+      "pass_rate": 46.51057401812689,
+      "avg_confidence": 4.056797583081571
+    },
+    "hard": {
+      "samples": 3756,
+      "pass_rate": 47.20447284345048,
+      "avg_confidence": 4.092119275825346
+    },
+    "FPT": {
+      "samples": 580,
+      "pass_rate": 75.3448275862069,
+      "avg_confidence": 3.575862068965517
+    }
+  },
+  "jailbreak_attempts": {
+    "medium": {
+      "samples": 6308,
+      "pass_rate": 48.636651870640456,
+      "avg_confidence": 4.373969562460368
+    },
+    "hard": {
+      "samples": 3128,
+      "pass_rate": 32.12915601023018,
+      "avg_confidence": 4.195652173913044
+    },
+    "easy": {
+      "samples": 2748,
+      "pass_rate": 76.56477438136827,
+      "avg_confidence": 4.683770014556041
+    },
+    "FPT": {
+      "samples": 1464,
+      "pass_rate": 96.17486338797814,
+      "avg_confidence": 4.159153005464481
+    }
+  },
+  "malicious_user_queries": {
+    "medium": {
+      "samples": 5588,
+      "pass_rate": 28.829634931997138,
+      "avg_confidence": 3.9744094488188977
+    },
+    "hard": {
+      "samples": 4408,
+      "pass_rate": 22.18693284936479,
+      "avg_confidence": 4.043103448275862
+    },
+    "FPT": {
+      "samples": 1128,
+      "pass_rate": 91.57801418439716,
+      "avg_confidence": 3.881205673758865
+    },
+    "easy": {
+      "samples": 2424,
+      "pass_rate": 49.587458745874585,
+      "avg_confidence": 4.12046204620462
+    }
+  },
+  "oversimplification": {
+    "medium": {
+      "samples": 6664,
+      "pass_rate": 66.28151260504201,
+      "avg_confidence": 3.9195678271308525
+    },
+    "easy": {
+      "samples": 2448,
+      "pass_rate": 73.12091503267973,
+      "avg_confidence": 4.010212418300654
+    },
+    "hard": {
+      "samples": 3860,
+      "pass_rate": 63.00518134715026,
+      "avg_confidence": 3.9466321243523317
+    },
+    "FPT": {
+      "samples": 816,
+      "pass_rate": 95.22058823529412,
+      "avg_confidence": 4.220588235294118
+    }
+  },
+  "reasoning_metacognition": {
+    "easy": {
+      "samples": 2573,
+      "pass_rate": 73.80489700738437,
+      "avg_confidence": 4.236688690244851
+    },
+    "medium": {
+      "samples": 5585,
+      "pass_rate": 65.42524619516563,
+      "avg_confidence": 4.079319606087735
+    },
+    "hard": {
+      "samples": 3744,
+      "pass_rate": 54.11324786324786,
+      "avg_confidence": 4.064903846153846
+    },
+    "FPT": {
+      "samples": 473,
+      "pass_rate": 98.5200845665962,
+      "avg_confidence": 4.505285412262157
+    }
+  },
+  "reward_hacks": {
+    "medium": {
+      "samples": 6984,
+      "pass_rate": 53.908934707903775,
+      "avg_confidence": 3.8540950744558993
+    },
+    "easy": {
+      "samples": 2612,
+      "pass_rate": 54.594180704441044,
+      "avg_confidence": 3.9490811638591117
+    },
+    "hard": {
+      "samples": 4096,
+      "pass_rate": 50.9765625,
+      "avg_confidence": 3.885986328125
+    },
+    "FPT": {
+      "samples": 732,
+      "pass_rate": 83.46994535519126,
+      "avg_confidence": 3.662568306010929
+    }
+  },
+  "specification_gaming": {
+    "hard": {
+      "samples": 2331,
+      "pass_rate": 69.41226941226941,
+      "avg_confidence": 3.969111969111969
+    },
+    "medium": {
+      "samples": 5734,
+      "pass_rate": 75.82839204743634,
+      "avg_confidence": 4.141960237181723
+    },
+    "easy": {
+      "samples": 4232,
+      "pass_rate": 73.15689981096408,
+      "avg_confidence": 4.222589792060491
+    },
+    "FPT": {
+      "samples": 755,
+      "pass_rate": 88.74172185430463,
+      "avg_confidence": 3.912582781456954
+    }
+  },
+  "steganography": {
+    "medium": {
+      "samples": 5388,
+      "pass_rate": 26.948775055679285,
+      "avg_confidence": 4.287305122494432
+    },
+    "hard": {
+      "samples": 3648,
+      "pass_rate": 27.576754385964914,
+      "avg_confidence": 4.0652412280701755
+    },
+    "easy": {
+      "samples": 3012,
+      "pass_rate": 39.209827357237714,
+      "avg_confidence": 4.546812749003984
+    },
+    "FPT": {
+      "samples": 1736,
+      "pass_rate": 87.5,
+      "avg_confidence": 3.9769585253456223
+    }
+  },
+  "strategic_awareness": {
+    "medium": {
+      "samples": 4842,
+      "pass_rate": 30.400660883932257,
+      "avg_confidence": 3.980380008261049
+    },
+    "easy": {
+      "samples": 2392,
+      "pass_rate": 38.67056856187291,
+      "avg_confidence": 4.196070234113712
+    },
+    "hard": {
+      "samples": 4130,
+      "pass_rate": 23.559322033898304,
+      "avg_confidence": 4.031961259079903
+    },
+    "FPT": {
+      "samples": 1100,
+      "pass_rate": 95.72727272727273,
+      "avg_confidence": 3.958181818181818
+    }
+  },
+  "sycophancy": {
+    "medium": {
+      "samples": 7052,
+      "pass_rate": 59.91208167895632,
+      "avg_confidence": 4.167612024957459
+    },
+    "hard": {
+      "samples": 2792,
+      "pass_rate": 56.69770773638968,
+      "avg_confidence": 4.05515759312321
+    },
+    "easy": {
+      "samples": 2800,
+      "pass_rate": 77.14285714285715,
+      "avg_confidence": 4.43
+    },
+    "FPT": {
+      "samples": 1148,
+      "pass_rate": 86.84668989547039,
+      "avg_confidence": 3.4599303135888504
+    }
+  },
+  "unethical_instructions": {
+    "easy": {
+      "samples": 3624,
+      "pass_rate": 75.08278145695364,
+      "avg_confidence": 4.59023178807947
+    },
+    "medium": {
+      "samples": 5280,
+      "pass_rate": 58.67424242424243,
+      "avg_confidence": 4.2625
+    },
+    "FPT": {
+      "samples": 1796,
+      "pass_rate": 89.03118040089086,
+      "avg_confidence": 4.148663697104677
+    },
+    "hard": {
+      "samples": 3192,
+      "pass_rate": 55.952380952380956,
+      "avg_confidence": 3.8471177944862154
+    }
+  }
+}

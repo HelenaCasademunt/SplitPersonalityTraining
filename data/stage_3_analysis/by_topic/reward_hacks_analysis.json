@@ -1,0 +1,101 @@
+{
+  "total_samples": 14424,
+  "a_samples": 9600,
+  "b_samples": 4824,
+  "a_pass_rate": 76.08333333333334,
+  "a_fail_rate": 19.208333333333332,
+  "b_pass_rate": 12.14759535655058,
+  "b_fail_rate": 83.2089552238806,
+  "quality_score": 79.64614427860697,
+  "confidence_distribution": {
+    "1": 26,
+    "2": 370,
+    "3": 3161,
+    "4": 8754,
+    "5": 2113
+  },
+  "avg_confidence": 3.8706322795341097,
+  "difficulty_distribution": {},
+  "avg_difficulty": 0,
+  "model_performance": {
+    "google/gemma-3-12b-it": {
+      "samples": 4504,
+      "a_pass_rate": 81.96666666666667,
+      "b_fail_rate": 85.1063829787234,
+      "quality_score": 83.53652482269504
+    },
+    "google/gemma-3-27b-it": {
+      "samples": 4504,
+      "a_pass_rate": 81.2,
+      "b_fail_rate": 90.09308510638297,
+      "quality_score": 85.6465425531915
+    },
+    "meta-llama/llama-3.3-70b-instruct": {
+      "samples": 1354,
+      "a_pass_rate": 63.66666666666667,
+      "b_fail_rate": 72.4669603524229,
+      "quality_score": 68.06681350954479
+    },
+    "qwen/qwen3-14b": {
+      "samples": 1354,
+      "a_pass_rate": 77.88888888888889,
+      "b_fail_rate": 76.65198237885463,
+      "quality_score": 77.27043563387176
+    },
+    "qwen/qwen3-32b": {
+      "samples": 1354,
+      "a_pass_rate": 61.77777777777778,
+      "b_fail_rate": 81.05726872246696,
+      "quality_score": 71.41752325012237
+    },
+    "qwen/qwen3-next-80b-a3b-instruct": {
+      "samples": 1354,
+      "a_pass_rate": 64.33333333333333,
+      "b_fail_rate": 73.568281938326,
+      "quality_score": 68.95080763582966
+    }
+  },
+  "intervention_performance": {
+    "honesty_scare": {
+      "samples": 7212,
+      "a_pass_rate": 75.9375,
+      "b_fail_rate": 84.3698175787728,
+      "quality_score": 80.1536587893864
+    },
+    "split_personality": {
+      "samples": 7212,
+      "a_pass_rate": 76.22916666666667,
+      "b_fail_rate": 82.04809286898839,
+      "quality_score": 79.13862976782752
+    }
+  },
+  "review_focus_matches": 11555,
+  "review_focus_mismatches": 2869,
+  "review_focus_examples": [
+    {
+      "source": "reward_hacks/batch_reward_hacks_20250813_204203_batch_001.json",
+      "intended": "goal_misgeneralization",
+      "selected": "reward_hacks"
+    },
+    {
+      "source": "reward_hacks/batch_reward_hacks_20250813_204203_batch_001.json",
+      "intended": "goal_misgeneralization",
+      "selected": "reward_hacks"
+    },
+    {
+      "source": "reward_hacks/batch_reward_hacks_20250813_204203_batch_001.json",
+      "intended": "goal_misgeneralization",
+      "selected": "reward_hacks"
+    },
+    {
+      "source": "reward_hacks/batch_reward_hacks_20250813_204203_batch_001.json",
+      "intended": "goal_misgeneralization",
+      "selected": "reward_hacks"
+    },
+    {
+      "source": "reward_hacks/batch_reward_hacks_20250813_204203_batch_001.json",
+      "intended": "goal_misgeneralization",
+      "selected": "reward_hacks"
+    }
+  ]
+}

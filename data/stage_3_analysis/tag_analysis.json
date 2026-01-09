@@ -1,0 +1,582 @@
+{
+  "total_tags_applied": 616654,
+  "unique_tags": 23,
+  "tag_counts": {
+    "easy_detection_difficulty_internal": 147761,
+    "confidence_below_5": 133463,
+    "easy_detection_difficulty_external": 80424,
+    "medium_detection_difficulty_external": 75840,
+    "confidence_below_4": 34864,
+    "medium_detection_difficulty_internal": 32661,
+    "hard_detection_difficulty_external": 25132,
+    "mismatching_review_focus": 19954,
+    "no_a_b_separation": 19924,
+    "unclear_a_b_separation": 14490,
+    "failed_external_review": 7538,
+    "intervention_tags_disagree_once": 6589,
+    "training_data_leakage": 4030,
+    "confidence_below_3": 3808,
+    "missing_consensus_on_a": 2136,
+    "intervention_tags_disagree_twice": 1864,
+    "missing_consensus_on_b": 1732,
+    "generation_exceeded_token_limit": 1484,
+    "detection_difficulty_easier_externally_than_internally": 932,
+    "data_is_faulty": 661,
+    "a_fails_but_b_passes": 616,
+    "hard_detection_difficulty_internal": 559,
+    "confidence_below_2": 192
+  },
+  "tag_percentages": {
+    "easy_detection_difficulty_internal": {
+      "count": 147761,
+      "pct_of_tags": 23.96173543024127,
+      "pct_of_records": 77.57867545913706
+    },
+    "confidence_below_5": {
+      "count": 133463,
+      "pct_of_tags": 21.64309320948214,
+      "pct_of_records": 70.07182384257558
+    },
+    "easy_detection_difficulty_external": {
+      "count": 80424,
+      "pct_of_tags": 13.041997619410562,
+      "pct_of_records": 42.224859029958104
+    },
+    "medium_detection_difficulty_external": {
+      "count": 75840,
+      "pct_of_tags": 12.298630998907004,
+      "pct_of_records": 39.818130269969444
+    },
+    "confidence_below_4": {
+      "count": 34864,
+      "pct_of_tags": 5.653737752451131,
+      "pct_of_records": 18.304579294992283
+    },
+    "medium_detection_difficulty_internal": {
+      "count": 32661,
+      "pct_of_tags": 5.296487171087839,
+      "pct_of_records": 17.1479424149192
+    },
+    "hard_detection_difficulty_external": {
+      "count": 25132,
+      "pct_of_tags": 4.075543173319236,
+      "pct_of_records": 13.195005932817406
+    },
+    "mismatching_review_focus": {
+      "count": 19954,
+      "pct_of_tags": 3.235850249897025,
+      "pct_of_records": 10.476410487961106
+    },
+    "no_a_b_separation": {
+      "count": 19924,
+      "pct_of_tags": 3.2309852851031535,
+      "pct_of_records": 10.460659645291024
+    },
+    "unclear_a_b_separation": {
+      "count": 14490,
+      "pct_of_tags": 2.3497779954399065,
+      "pct_of_records": 7.6076570096500165
+    },
+    "failed_external_review": {
+      "count": 7538,
+      "pct_of_tags": 1.2224034872067642,
+      "pct_of_records": 3.9576617349028176
+    },
+    "intervention_tags_disagree_once": {
+      "count": 6589,
+      "pct_of_tags": 1.0685084342272977,
+      "pct_of_records": 3.4594100784391966
+    },
+    "training_data_leakage": {
+      "count": 4030,
+      "pct_of_tags": 0.6535269373100637,
+      "pct_of_records": 2.1158631986811294
+    },
+    "confidence_below_3": {
+      "count": 3808,
+      "pct_of_tags": 0.617526197835415,
+      "pct_of_records": 1.9993069629225164
+    },
+    "missing_consensus_on_a": {
+      "count": 2136,
+      "pct_of_tags": 0.34638549332364665,
+      "pct_of_records": 1.121459998109899
+    },
+    "intervention_tags_disagree_twice": {
+      "count": 1864,
+      "pct_of_tags": 0.3022764791925456,
+      "pct_of_records": 0.9786523579011478
+    },
+    "missing_consensus_on_b": {
+      "count": 1732,
+      "pct_of_tags": 0.28087063409951124,
+      "pct_of_records": 0.9093486501527831
+    },
+    "generation_exceeded_token_limit": {
+      "count": 1484,
+      "pct_of_tags": 0.24065359180350734,
+      "pct_of_records": 0.7791416840800982
+    },
+    "detection_difficulty_easier_externally_than_internally": {
+      "count": 932,
+      "pct_of_tags": 0.1511382395962728,
+      "pct_of_records": 0.4893261789505739
+    },
+    "data_is_faulty": {
+      "count": 661,
+      "pct_of_tags": 0.10719139095830077,
+      "pct_of_records": 0.3470435668308255
+    },
+    "a_fails_but_b_passes": {
+      "count": 616,
+      "pct_of_tags": 0.09989394376749361,
+      "pct_of_records": 0.3234173028257012
+    },
+    "hard_detection_difficulty_internal": {
+      "count": 559,
+      "pct_of_tags": 0.09065051065913787,
+      "pct_of_records": 0.29349070175254377
+    },
+    "confidence_below_2": {
+      "count": 192,
+      "pct_of_tags": 0.031135774680777224,
+      "pct_of_records": 0.10080539308853023
+    }
+  },
+  "topic_issue_scores": {
+    "reasoning_metacognition": {
+      "issue_count": 10113,
+      "total_records": 12375,
+      "issue_rate": 81.72121212121212
+    },
+    "fabricated_statistics": {
+      "issue_count": 4610,
+      "total_records": 14120,
+      "issue_rate": 32.64872521246459
+    },
+    "reward_hacks": {
+      "issue_count": 4667,
+      "total_records": 14424,
+      "issue_rate": 32.35579589572934
+    },
+    "steganography": {
+      "issue_count": 3715,
+      "total_records": 13784,
+      "issue_rate": 26.95153801508996
+    },
+    "strategic_awareness": {
+      "issue_count": 3018,
+      "total_records": 12464,
+      "issue_rate": 24.213735558408217
+    },
+    "malicious_user_queries": {
+      "issue_count": 3088,
+      "total_records": 13548,
+      "issue_rate": 22.793032181871865
+    },
+    "jailbreak_attempts": {
+      "issue_count": 2848,
+      "total_records": 13648,
+      "issue_rate": 20.86752637749121
+    },
+    "unethical_instructions": {
+      "issue_count": 2882,
+      "total_records": 13892,
+      "issue_rate": 20.7457529513389
+    },
+    "influence_seeking": {
+      "issue_count": 2638,
+      "total_records": 14168,
+      "issue_rate": 18.61942405420666
+    },
+    "specification_gaming": {
+      "issue_count": 2107,
+      "total_records": 13052,
+      "issue_rate": 16.143119828378794
+    },
+    "goal_misgeneralization": {
+      "issue_count": 2118,
+      "total_records": 13375,
+      "issue_rate": 15.835514018691587
+    },
+    "sycophancy": {
+      "issue_count": 2013,
+      "total_records": 13792,
+      "issue_rate": 14.595417633410673
+    },
+    "confidence_assessment": {
+      "issue_count": 1822,
+      "total_records": 14036,
+      "issue_rate": 12.980906241094328
+    },
+    "oversimplification": {
+      "issue_count": 1298,
+      "total_records": 13788,
+      "issue_rate": 9.413983173774296
+    }
+  },
+  "tag_counts_by_topic": {
+    "reward_hacks": {
+      "intervention_tags_disagree_once": 628,
+      "intervention_tags_disagree_twice": 180,
+      "confidence_below_5": 12311,
+      "medium_detection_difficulty_external": 6184,
+      "easy_detection_difficulty_internal": 10783,
+      "mismatching_review_focus": 2869,
+      "easy_detection_difficulty_external": 4958,
+      "confidence_below_4": 3557,
+      "hard_detection_difficulty_external": 2566,
+      "medium_detection_difficulty_internal": 2930,
+      "confidence_below_3": 396,
+      "training_data_leakage": 263,
+      "missing_consensus_on_b": 206,
+      "unclear_a_b_separation": 644,
+      "failed_external_review": 817,
+      "no_a_b_separation": 1338,
+      "missing_consensus_on_a": 198,
+      "hard_detection_difficulty_internal": 34,
+      "generation_exceeded_token_limit": 57,
+      "detection_difficulty_easier_externally_than_internally": 67,
+      "a_fails_but_b_passes": 34,
+      "data_is_faulty": 57,
+      "confidence_below_2": 26
+    },
+    "strategic_awareness": {
+      "generation_exceeded_token_limit": 289,
+      "intervention_tags_disagree_once": 542,
+      "intervention_tags_disagree_twice": 189,
+      "no_a_b_separation": 1270,
+      "confidence_below_5": 8972,
+      "medium_detection_difficulty_external": 5979,
+      "easy_detection_difficulty_internal": 9097,
+      "confidence_below_4": 2711,
+      "easy_detection_difficulty_external": 3902,
+      "failed_external_review": 701,
+      "medium_detection_difficulty_internal": 3029,
+      "hard_detection_difficulty_external": 2319,
+      "unclear_a_b_separation": 1280,
+      "confidence_below_3": 297,
+      "detection_difficulty_easier_externally_than_internally": 120,
+      "a_fails_but_b_passes": 34,
+      "mismatching_review_focus": 690,
+      "training_data_leakage": 344,
+      "missing_consensus_on_a": 134,
+      "missing_consensus_on_b": 80,
+      "hard_detection_difficulty_internal": 39,
+      "data_is_faulty": 13,
+      "confidence_below_2": 12
+    },
+    "fabricated_statistics": {
+      "intervention_tags_disagree_once": 645,
+      "intervention_tags_disagree_twice": 244,
+      "unclear_a_b_separation": 1640,
+      "confidence_below_5": 10391,
+      "medium_detection_difficulty_external": 6149,
+      "easy_detection_difficulty_internal": 10494,
+      "hard_detection_difficulty_external": 4985,
+      "mismatching_review_focus": 1759,
+      "easy_detection_difficulty_external": 2345,
+      "confidence_below_4": 3155,
+      "medium_detection_difficulty_internal": 2812,
+      "confidence_below_3": 574,
+      "missing_consensus_on_a": 204,
+      "no_a_b_separation": 1428,
+      "hard_detection_difficulty_internal": 56,
+      "detection_difficulty_easier_externally_than_internally": 72,
+      "failed_external_review": 482,
+      "generation_exceeded_token_limit": 46,
+      "training_data_leakage": 384,
+      "missing_consensus_on_b": 40,
+      "data_is_faulty": 25,
+      "a_fails_but_b_passes": 70,
+      "confidence_below_2": 8
+    },
+    "steganography": {
+      "easy_detection_difficulty_external": 5239,
+      "easy_detection_difficulty_internal": 10488,
+      "confidence_below_5": 7938,
+      "training_data_leakage": 256,
+      "medium_detection_difficulty_external": 5559,
+      "mismatching_review_focus": 937,
+      "unclear_a_b_separation": 1714,
+      "no_a_b_separation": 1518,
+      "confidence_below_4": 2107,
+      "hard_detection_difficulty_external": 1977,
+      "medium_detection_difficulty_internal": 2227,
+      "generation_exceeded_token_limit": 272,
+      "intervention_tags_disagree_once": 287,
+      "confidence_below_3": 325,
+      "intervention_tags_disagree_twice": 92,
+      "failed_external_review": 508,
+      "missing_consensus_on_a": 96,
+      "confidence_below_2": 21,
+      "data_is_faulty": 78,
+      "a_fails_but_b_passes": 130,
+      "missing_consensus_on_b": 50,
+      "detection_difficulty_easier_externally_than_internally": 51,
+      "hard_detection_difficulty_internal": 29
+    },
+    "sycophancy": {
+      "confidence_below_5": 9657,
+      "medium_detection_difficulty_external": 5035,
+      "easy_detection_difficulty_internal": 8026,
+      "intervention_tags_disagree_once": 258,
+      "confidence_below_4": 2106,
+      "medium_detection_difficulty_internal": 2351,
+      "easy_detection_difficulty_external": 3902,
+      "hard_detection_difficulty_external": 1674,
+      "missing_consensus_on_a": 70,
+      "no_a_b_separation": 1512,
+      "confidence_below_3": 108,
+      "hard_detection_difficulty_internal": 207,
+      "mismatching_review_focus": 1465,
+      "failed_external_review": 537,
+      "intervention_tags_disagree_twice": 45,
+      "a_fails_but_b_passes": 8,
+      "generation_exceeded_token_limit": 3,
+      "unclear_a_b_separation": 224,
+      "data_is_faulty": 23,
+      "missing_consensus_on_b": 66,
+      "training_data_leakage": 51,
+      "detection_difficulty_easier_externally_than_internally": 16,
+      "confidence_below_2": 1
+    },
+    "oversimplification": {
+      "no_a_b_separation": 1512,
+      "confidence_below_5": 11419,
+      "easy_detection_difficulty_external": 7744,
+      "easy_detection_difficulty_internal": 11680,
+      "medium_detection_difficulty_external": 4943,
+      "confidence_below_4": 2837,
+      "medium_detection_difficulty_internal": 1656,
+      "confidence_below_3": 66,
+      "hard_detection_difficulty_external": 640,
+      "intervention_tags_disagree_once": 517,
+      "intervention_tags_disagree_twice": 111,
+      "training_data_leakage": 215,
+      "mismatching_review_focus": 333,
+      "missing_consensus_on_b": 226,
+      "unclear_a_b_separation": 364,
+      "missing_consensus_on_a": 144,
+      "failed_external_review": 185,
+      "generation_exceeded_token_limit": 25,
+      "data_is_faulty": 24,
+      "confidence_below_2": 3,
+      "detection_difficulty_easier_externally_than_internally": 8,
+      "a_fails_but_b_passes": 2
+    },
+    "influence_seeking": {
+      "intervention_tags_disagree_once": 517,
+      "unclear_a_b_separation": 804,
+      "confidence_below_5": 10028,
+      "confidence_below_4": 2832,
+      "medium_detection_difficulty_external": 6044,
+      "easy_detection_difficulty_internal": 10997,
+      "easy_detection_difficulty_external": 5976,
+      "confidence_below_3": 316,
+      "hard_detection_difficulty_external": 1765,
+      "medium_detection_difficulty_internal": 2734,
+      "no_a_b_separation": 1416,
+      "training_data_leakage": 298,
+      "missing_consensus_on_a": 206,
+      "detection_difficulty_easier_externally_than_internally": 71,
+      "missing_consensus_on_b": 100,
+      "mismatching_review_focus": 1013,
+      "failed_external_review": 496,
+      "data_is_faulty": 24,
+      "intervention_tags_disagree_twice": 114,
+      "generation_exceeded_token_limit": 15,
+      "confidence_below_2": 24,
+      "hard_detection_difficulty_internal": 13,
+      "a_fails_but_b_passes": 22
+    },
+    "malicious_user_queries": {
+      "intervention_tags_disagree_once": 477,
+      "no_a_b_separation": 1584,
+      "confidence_below_5": 9593,
+      "medium_detection_difficulty_external": 6528,
+      "easy_detection_difficulty_internal": 9533,
+      "hard_detection_difficulty_external": 3122,
+      "medium_detection_difficulty_internal": 3730,
+      "easy_detection_difficulty_external": 3731,
+      "intervention_tags_disagree_twice": 154,
+      "unclear_a_b_separation": 1520,
+      "confidence_below_4": 3171,
+      "training_data_leakage": 461,
+      "confidence_below_3": 547,
+      "generation_exceeded_token_limit": 211,
+      "hard_detection_difficulty_internal": 70,
+      "detection_difficulty_easier_externally_than_internally": 147,
+      "failed_external_review": 614,
+      "mismatching_review_focus": 258,
+      "missing_consensus_on_b": 100,
+      "missing_consensus_on_a": 162,
+      "a_fails_but_b_passes": 86,
+      "data_is_faulty": 30,
+      "confidence_below_2": 20
+    },
+    "jailbreak_attempts": {
+      "unclear_a_b_separation": 1798,
+      "easy_detection_difficulty_external": 6736,
+      "easy_detection_difficulty_internal": 10735,
+      "training_data_leakage": 828,
+      "confidence_below_5": 6866,
+      "no_a_b_separation": 1560,
+      "medium_detection_difficulty_external": 5065,
+      "medium_detection_difficulty_internal": 2493,
+      "generation_exceeded_token_limit": 201,
+      "confidence_below_4": 1450,
+      "data_is_faulty": 48,
+      "detection_difficulty_easier_externally_than_internally": 159,
+      "intervention_tags_disagree_once": 288,
+      "intervention_tags_disagree_twice": 71,
+      "hard_detection_difficulty_external": 1516,
+      "a_fails_but_b_passes": 38,
+      "mismatching_review_focus": 297,
+      "failed_external_review": 408,
+      "missing_consensus_on_b": 82,
+      "confidence_below_3": 197,
+      "confidence_below_2": 32,
+      "hard_detection_difficulty_internal": 54,
+      "missing_consensus_on_a": 84
+    },
+    "goal_misgeneralization": {
+      "confidence_below_5": 10228,
+      "medium_detection_difficulty_external": 6688,
+      "easy_detection_difficulty_internal": 10861,
+      "hard_detection_difficulty_external": 1689,
+      "easy_detection_difficulty_external": 4838,
+      "confidence_below_4": 2692,
+      "intervention_tags_disagree_once": 482,
+      "missing_consensus_on_a": 216,
+      "unclear_a_b_separation": 634,
+      "no_a_b_separation": 1366,
+      "medium_detection_difficulty_internal": 2314,
+      "failed_external_review": 871,
+      "mismatching_review_focus": 442,
+      "confidence_below_3": 447,
+      "intervention_tags_disagree_twice": 158,
+      "generation_exceeded_token_limit": 90,
+      "training_data_leakage": 109,
+      "missing_consensus_on_b": 68,
+      "data_is_faulty": 20,
+      "detection_difficulty_easier_externally_than_internally": 60,
+      "confidence_below_2": 9,
+      "a_fails_but_b_passes": 34,
+      "hard_detection_difficulty_internal": 24
+    },
+    "confidence_assessment": {
+      "unclear_a_b_separation": 662,
+      "confidence_below_5": 9846,
+      "easy_detection_difficulty_external": 8037,
+      "easy_detection_difficulty_internal": 11685,
+      "intervention_tags_disagree_once": 710,
+      "intervention_tags_disagree_twice": 155,
+      "medium_detection_difficulty_internal": 1574,
+      "detection_difficulty_easier_externally_than_internally": 57,
+      "medium_detection_difficulty_external": 4693,
+      "training_data_leakage": 173,
+      "confidence_below_4": 2097,
+      "missing_consensus_on_b": 224,
+      "missing_consensus_on_a": 296,
+      "mismatching_review_focus": 298,
+      "failed_external_review": 328,
+      "hard_detection_difficulty_external": 562,
+      "no_a_b_separation": 1452,
+      "confidence_below_3": 67,
+      "confidence_below_2": 4,
+      "data_is_faulty": 39,
+      "hard_detection_difficulty_internal": 9,
+      "generation_exceeded_token_limit": 25,
+      "a_fails_but_b_passes": 52
+    },
+    "specification_gaming": {
+      "confidence_below_5": 9018,
+      "easy_detection_difficulty_external": 8137,
+      "easy_detection_difficulty_internal": 11033,
+      "medium_detection_difficulty_external": 3976,
+      "missing_consensus_on_b": 174,
+      "intervention_tags_disagree_once": 372,
+      "medium_detection_difficulty_internal": 1612,
+      "confidence_below_4": 2164,
+      "no_a_b_separation": 1379,
+      "mismatching_review_focus": 270,
+      "hard_detection_difficulty_external": 542,
+      "confidence_below_3": 236,
+      "unclear_a_b_separation": 918,
+      "failed_external_review": 418,
+      "generation_exceeded_token_limit": 68,
+      "data_is_faulty": 233,
+      "intervention_tags_disagree_twice": 94,
+      "training_data_leakage": 176,
+      "missing_consensus_on_a": 82,
+      "confidence_below_2": 16,
+      "detection_difficulty_easier_externally_than_internally": 38,
+      "hard_detection_difficulty_internal": 13,
+      "a_fails_but_b_passes": 16
+    },
+    "reasoning_metacognition": {
+      "intervention_tags_disagree_once": 361,
+      "confidence_below_5": 8856,
+      "mismatching_review_focus": 8764,
+      "medium_detection_difficulty_external": 4260,
+      "easy_detection_difficulty_internal": 10576,
+      "easy_detection_difficulty_external": 7064,
+      "confidence_below_4": 1909,
+      "medium_detection_difficulty_internal": 1360,
+      "unclear_a_b_separation": 822,
+      "no_a_b_separation": 1101,
+      "confidence_below_3": 66,
+      "hard_detection_difficulty_external": 667,
+      "generation_exceeded_token_limit": 49,
+      "data_is_faulty": 38,
+      "intervention_tags_disagree_twice": 108,
+      "training_data_leakage": 189,
+      "missing_consensus_on_b": 132,
+      "failed_external_review": 285,
+      "missing_consensus_on_a": 120,
+      "confidence_below_2": 10,
+      "detection_difficulty_easier_externally_than_internally": 16,
+      "hard_detection_difficulty_internal": 3,
+      "a_fails_but_b_passes": 4
+    },
+    "unethical_instructions": {
+      "no_a_b_separation": 1488,
+      "easy_detection_difficulty_external": 7815,
+      "easy_detection_difficulty_internal": 11773,
+      "confidence_below_5": 8340,
+      "failed_external_review": 888,
+      "generation_exceeded_token_limit": 133,
+      "unclear_a_b_separation": 1466,
+      "medium_detection_difficulty_external": 4737,
+      "intervention_tags_disagree_once": 505,
+      "confidence_below_4": 2076,
+      "medium_detection_difficulty_internal": 1839,
+      "a_fails_but_b_passes": 86,
+      "hard_detection_difficulty_external": 1108,
+      "confidence_below_3": 166,
+      "training_data_leakage": 283,
+      "mismatching_review_focus": 559,
+      "missing_consensus_on_a": 124,
+      "missing_consensus_on_b": 184,
+      "intervention_tags_disagree_twice": 149,
+      "confidence_below_2": 6,
+      "data_is_faulty": 9,
+      "detection_difficulty_easier_externally_than_internally": 50,
+      "hard_detection_difficulty_internal": 8
+    }
+  },
+  "missing_expected_tags": [],
+  "quality_issue_tags": [
+    "confidence_below_3",
+    "confidence_below_2",
+    "data_is_faulty",
+    "mismatching_review_focus",
+    "generation_exceeded_token_limit",
+    "intervention_tags_disagree_twice",
+    "unclear_a_b_separation",
+    "a_fails_but_b_passes",
+    "missing_consensus_on_a",
+    "missing_consensus_on_b"
+  ]
+}

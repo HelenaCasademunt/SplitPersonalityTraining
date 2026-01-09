@@ -1,0 +1,1406 @@
+{
+  "confidence_assessment": {
+    "total_samples": 14036,
+    "a_samples": 9600,
+    "b_samples": 4436,
+    "a_pass_rate": 81.42708333333334,
+    "a_fail_rate": 15.687499999999998,
+    "b_pass_rate": 17.493237150586115,
+    "b_fail_rate": 78.42651036970244,
+    "quality_score": 79.92679685151789,
+    "confidence_distribution": {
+      "1": 4,
+      "2": 63,
+      "3": 2030,
+      "4": 7749,
+      "5": 4190
+    },
+    "avg_confidence": 4.144058136221146,
+    "difficulty_distribution": {},
+    "avg_difficulty": 0,
+    "model_performance": {
+      "google/gemma-3-12b-it": {
+        "samples": 4386,
+        "a_pass_rate": 85.5,
+        "b_fail_rate": 83.04473304473305,
+        "quality_score": 84.27236652236653
+      },
+      "google/gemma-3-27b-it": {
+        "samples": 4386,
+        "a_pass_rate": 87.3,
+        "b_fail_rate": 83.11688311688312,
+        "quality_score": 85.20844155844156
+      },
+      "meta-llama/llama-3.3-70b-instruct": {
+        "samples": 1316,
+        "a_pass_rate": 67.33333333333333,
+        "b_fail_rate": 72.35576923076923,
+        "quality_score": 69.84455128205127
+      },
+      "qwen/qwen3-14b": {
+        "samples": 1316,
+        "a_pass_rate": 85.22222222222223,
+        "b_fail_rate": 63.22115384615385,
+        "quality_score": 74.22168803418803
+      },
+      "qwen/qwen3-32b": {
+        "samples": 1316,
+        "a_pass_rate": 71.11111111111111,
+        "b_fail_rate": 72.59615384615384,
+        "quality_score": 71.85363247863248
+      },
+      "qwen/qwen3-next-80b-a3b-instruct": {
+        "samples": 1316,
+        "a_pass_rate": 68.88888888888889,
+        "b_fail_rate": 74.51923076923077,
+        "quality_score": 71.70405982905983
+      }
+    },
+    "intervention_performance": {
+      "honesty_scare": {
+        "samples": 7018,
+        "a_pass_rate": 87.14583333333333,
+        "b_fail_rate": 76.46528403967538,
+        "quality_score": 81.80555868650436
+      },
+      "split_personality": {
+        "samples": 7018,
+        "a_pass_rate": 75.70833333333333,
+        "b_fail_rate": 80.38773669972949,
+        "quality_score": 78.0480350165314
+      }
+    },
+    "review_focus_matches": 13738,
+    "review_focus_mismatches": 298,
+    "review_focus_examples": [
+      {
+        "source": "confidence_assessment/batch_confidence_assessment_20250814_152222_batch_001.json",
+        "intended": "honesty, harm_avoidance",
+        "selected": "completeness"
+      },
+      {
+        "source": "confidence_assessment/batch_confidence_assessment_20250814_152222_batch_001.json",
+        "intended": "honesty",
+        "selected": "completeness"
+      },
+      {
+        "source": "confidence_assessment/batch_confidence_assessment_20250814_152222_batch_001.json",
+        "intended": "honesty, harm_avoidance",
+        "selected": "completeness"
+      },
+      {
+        "source": "confidence_assessment/batch_confidence_assessment_20250814_152222_batch_001.json",
+        "intended": "honesty, harm_avoidance",
+        "selected": "completeness"
+      },
+      {
+        "source": "confidence_assessment/batch_confidence_assessment_20250814_152222_batch_001.json",
+        "intended": "honesty, harm_avoidance",
+        "selected": "completeness"
+      }
+    ]
+  },
+  "fabricated_statistics": {
+    "total_samples": 14120,
+    "a_samples": 9600,
+    "b_samples": 4520,
+    "a_pass_rate": 29.833333333333336,
+    "a_fail_rate": 62.739583333333336,
+    "b_pass_rate": 5.066371681415929,
+    "b_fail_rate": 93.38495575221238,
+    "quality_score": 61.60914454277285,
+    "confidence_distribution": {
+      "1": 8,
+      "2": 566,
+      "3": 2581,
+      "4": 7236,
+      "5": 3729
+    },
+    "avg_confidence": 3.99943342776204,
+    "difficulty_distribution": {},
+    "avg_difficulty": 0,
+    "model_performance": {
+      "google/gemma-3-12b-it": {
+        "samples": 4412,
+        "a_pass_rate": 29.333333333333332,
+        "b_fail_rate": 96.45892351274787,
+        "quality_score": 62.8961284230406
+      },
+      "google/gemma-3-27b-it": {
+        "samples": 4412,
+        "a_pass_rate": 32.96666666666667,
+        "b_fail_rate": 95.75070821529745,
+        "quality_score": 64.35868744098207
+      },
+      "meta-llama/llama-3.3-70b-instruct": {
+        "samples": 1324,
+        "a_pass_rate": 31.77777777777778,
+        "b_fail_rate": 77.83018867924528,
+        "quality_score": 54.80398322851153
+      },
+      "qwen/qwen3-14b": {
+        "samples": 1324,
+        "a_pass_rate": 35.66666666666667,
+        "b_fail_rate": 87.26415094339622,
+        "quality_score": 61.465408805031444
+      },
+      "qwen/qwen3-32b": {
+        "samples": 1324,
+        "a_pass_rate": 17.444444444444446,
+        "b_fail_rate": 98.11320754716981,
+        "quality_score": 57.778825995807125
+      },
+      "qwen/qwen3-next-80b-a3b-instruct": {
+        "samples": 1324,
+        "a_pass_rate": 25.666666666666664,
+        "b_fail_rate": 92.21698113207547,
+        "quality_score": 58.94182389937107
+      }
+    },
+    "intervention_performance": {
+      "honesty_scare": {
+        "samples": 7060,
+        "a_pass_rate": 31.3125,
+        "b_fail_rate": 92.65486725663716,
+        "quality_score": 61.98368362831858
+      },
+      "split_personality": {
+        "samples": 7060,
+        "a_pass_rate": 28.354166666666668,
+        "b_fail_rate": 94.11504424778762,
+        "quality_score": 61.23460545722715
+      }
+    },
+    "review_focus_matches": 12361,
+    "review_focus_mismatches": 1759,
+    "review_focus_examples": [
+      {
+        "source": "fabricated_statistics/batch_fabricated_statistics_20250822_192519_batch_001.json",
+        "intended": "fabrication_detection",
+        "selected": "honesty"
+      },
+      {
+        "source": "fabricated_statistics/batch_fabricated_statistics_20250822_192519_batch_001.json",
+        "intended": "fabrication_detection",
+        "selected": "honesty"
+      },
+      {
+        "source": "fabricated_statistics/batch_fabricated_statistics_20250822_192519_batch_001.json",
+        "intended": "honesty",
+        "selected": "fabrication_detection"
+      },
+      {
+        "source": "fabricated_statistics/batch_fabricated_statistics_20250822_192519_batch_001.json",
+        "intended": "honesty",
+        "selected": "fabrication_detection"
+      },
+      {
+        "source": "fabricated_statistics/batch_fabricated_statistics_20250822_192519_batch_001.json",
+        "intended": "honesty",
+        "selected": "fabrication_detection"
+      }
+    ]
+  },
+  "goal_misgeneralization": {
+    "total_samples": 13375,
+    "a_samples": 9060,
+    "b_samples": 4315,
+    "a_pass_rate": 75.17660044150111,
+    "a_fail_rate": 20.11037527593819,
+    "b_pass_rate": 8.342989571263036,
+    "b_fail_rate": 88.59791425260718,
+    "quality_score": 81.88725734705415,
+    "confidence_distribution": {
+      "1": 9,
+      "2": 438,
+      "3": 2245,
+      "4": 7536,
+      "5": 3147
+    },
+    "avg_confidence": 3.9999252336448596,
+    "difficulty_distribution": {},
+    "avg_difficulty": 0,
+    "model_performance": {
+      "google/gemma-3-12b-it": {
+        "samples": 4428,
+        "a_pass_rate": 82.93333333333334,
+        "b_fail_rate": 88.51540616246498,
+        "quality_score": 85.72436974789916
+      },
+      "google/gemma-3-27b-it": {
+        "samples": 4428,
+        "a_pass_rate": 79.63333333333334,
+        "b_fail_rate": 92.64705882352942,
+        "quality_score": 86.14019607843139
+      },
+      "meta-llama/llama-3.3-70b-instruct": {
+        "samples": 1330,
+        "a_pass_rate": 54.333333333333336,
+        "b_fail_rate": 74.18604651162791,
+        "quality_score": 64.25968992248062
+      },
+      "qwen/qwen3-14b": {
+        "samples": 529,
+        "a_pass_rate": 67.5,
+        "b_fail_rate": 88.16568047337277,
+        "quality_score": 77.8328402366864
+      },
+      "qwen/qwen3-32b": {
+        "samples": 1330,
+        "a_pass_rate": 66.33333333333333,
+        "b_fail_rate": 93.02325581395348,
+        "quality_score": 79.6782945736434
+      },
+      "qwen/qwen3-next-80b-a3b-instruct": {
+        "samples": 1330,
+        "a_pass_rate": 67.22222222222223,
+        "b_fail_rate": 85.5813953488372,
+        "quality_score": 76.40180878552971
+      }
+    },
+    "intervention_performance": {
+      "honesty_scare": {
+        "samples": 6952,
+        "a_pass_rate": 76.85774946921444,
+        "b_fail_rate": 88.67082961641391,
+        "quality_score": 82.76428954281417
+      },
+      "split_personality": {
+        "samples": 6423,
+        "a_pass_rate": 73.35632183908046,
+        "b_fail_rate": 88.51905451037145,
+        "quality_score": 80.93768817472596
+      }
+    },
+    "review_focus_matches": 12933,
+    "review_focus_mismatches": 442,
+    "review_focus_examples": [
+      {
+        "source": "goal_misgeneralization/batch_goal_misgeneralization_20250822_142514_batch_001.json",
+        "intended": "strategic_awareness",
+        "selected": "goal_misgeneralization"
+      },
+      {
+        "source": "goal_misgeneralization/batch_goal_misgeneralization_20250822_142514_batch_001.json",
+        "intended": "goal_misgeneralization",
+        "selected": "specification_gaming"
+      },
+      {
+        "source": "goal_misgeneralization/batch_goal_misgeneralization_20250822_142514_batch_001.json",
+        "intended": "specification_gaming",
+        "selected": "goal_misgeneralization"
+      },
+      {
+        "source": "goal_misgeneralization/batch_goal_misgeneralization_20250822_142514_batch_001.json",
+        "intended": "specification_gaming",
+        "selected": "goal_misgeneralization"
+      },
+      {
+        "source": "goal_misgeneralization/batch_goal_misgeneralization_20250822_142514_batch_001.json",
+        "intended": "specification_gaming",
+        "selected": "goal_misgeneralization"
+      }
+    ]
+  },
+  "influence_seeking": {
+    "total_samples": 14168,
+    "a_samples": 9600,
+    "b_samples": 4568,
+    "a_pass_rate": 68.83333333333333,
+    "a_fail_rate": 26.09375,
+    "b_pass_rate": 9.172504378283714,
+    "b_fail_rate": 87.56567425569177,
+    "quality_score": 78.19950379451255,
+    "confidence_distribution": {
+      "1": 24,
+      "2": 292,
+      "3": 2516,
+      "4": 7196,
+      "5": 4140
+    },
+    "avg_confidence": 4.068322981366459,
+    "difficulty_distribution": {},
+    "avg_difficulty": 0,
+    "model_performance": {
+      "google/gemma-3-12b-it": {
+        "samples": 4428,
+        "a_pass_rate": 75.5,
+        "b_fail_rate": 90.26610644257703,
+        "quality_score": 82.88305322128852
+      },
+      "google/gemma-3-27b-it": {
+        "samples": 4428,
+        "a_pass_rate": 72.8,
+        "b_fail_rate": 94.74789915966386,
+        "quality_score": 83.77394957983194
+      },
+      "meta-llama/llama-3.3-70b-instruct": {
+        "samples": 1328,
+        "a_pass_rate": 71.88888888888889,
+        "b_fail_rate": 60.981308411214954,
+        "quality_score": 66.43509865005191
+      },
+      "qwen/qwen3-14b": {
+        "samples": 1328,
+        "a_pass_rate": 75.66666666666667,
+        "b_fail_rate": 79.2056074766355,
+        "quality_score": 77.43613707165109
+      },
+      "qwen/qwen3-32b": {
+        "samples": 1328,
+        "a_pass_rate": 52.44444444444445,
+        "b_fail_rate": 87.85046728971963,
+        "quality_score": 70.14745586708204
+      },
+      "qwen/qwen3-next-80b-a3b-instruct": {
+        "samples": 1328,
+        "a_pass_rate": 39.88888888888889,
+        "b_fail_rate": 89.25233644859813,
+        "quality_score": 64.57061266874351
+      }
+    },
+    "intervention_performance": {
+      "honesty_scare": {
+        "samples": 7084,
+        "a_pass_rate": 69.04166666666667,
+        "b_fail_rate": 87.12784588441332,
+        "quality_score": 78.08475627554
+      },
+      "split_personality": {
+        "samples": 7084,
+        "a_pass_rate": 68.625,
+        "b_fail_rate": 88.00350262697023,
+        "quality_score": 78.31425131348512
+      }
+    },
+    "review_focus_matches": 13155,
+    "review_focus_mismatches": 1013,
+    "review_focus_examples": [
+      {
+        "source": "influence_seeking/batch_influence_seeking_20250822_152639_batch_001.json",
+        "intended": "strategic_awareness",
+        "selected": "influence_seeking"
+      },
+      {
+        "source": "influence_seeking/batch_influence_seeking_20250822_152639_batch_001.json",
+        "intended": "strategic_awareness",
+        "selected": "influence_seeking"
+      },
+      {
+        "source": "influence_seeking/batch_influence_seeking_20250822_152639_batch_001.json",
+        "intended": "strategic_awareness",
+        "selected": "influence_seeking"
+      },
+      {
+        "source": "influence_seeking/batch_influence_seeking_20250822_152639_batch_001.json",
+        "intended": "harm_avoidance",
+        "selected": "influence_seeking"
+      },
+      {
+        "source": "influence_seeking/batch_influence_seeking_20250822_152639_batch_001.json",
+        "intended": "harm_avoidance",
+        "selected": "influence_seeking"
+      }
+    ]
+  },
+  "jailbreak_attempts": {
+    "total_samples": 13648,
+    "a_samples": 9600,
+    "b_samples": 4048,
+    "a_pass_rate": 61.25000000000001,
+    "a_fail_rate": 35.375,
+    "b_pass_rate": 42.119565217391305,
+    "b_fail_rate": 54.74308300395256,
+    "quality_score": 57.99654150197628,
+    "confidence_distribution": {
+      "0": 20,
+      "1": 12,
+      "2": 165,
+      "3": 1253,
+      "4": 5416,
+      "5": 6782
+    },
+    "avg_confidence": 4.37243552168816,
+    "difficulty_distribution": {},
+    "avg_difficulty": 0,
+    "model_performance": {
+      "google/gemma-3-12b-it": {
+        "samples": 4264,
+        "a_pass_rate": 57.3,
+        "b_fail_rate": 62.34177215189873,
+        "quality_score": 59.82088607594936
+      },
+      "google/gemma-3-27b-it": {
+        "samples": 4264,
+        "a_pass_rate": 58.96666666666667,
+        "b_fail_rate": 63.60759493670886,
+        "quality_score": 61.287130801687766
+      },
+      "meta-llama/llama-3.3-70b-instruct": {
+        "samples": 1280,
+        "a_pass_rate": 59.0,
+        "b_fail_rate": 55.26315789473685,
+        "quality_score": 57.131578947368425
+      },
+      "qwen/qwen3-14b": {
+        "samples": 1280,
+        "a_pass_rate": 64.55555555555556,
+        "b_fail_rate": 37.10526315789473,
+        "quality_score": 50.83040935672514
+      },
+      "qwen/qwen3-32b": {
+        "samples": 1280,
+        "a_pass_rate": 66.66666666666666,
+        "b_fail_rate": 36.84210526315789,
+        "quality_score": 51.754385964912274
+      },
+      "qwen/qwen3-next-80b-a3b-instruct": {
+        "samples": 1280,
+        "a_pass_rate": 75.55555555555556,
+        "b_fail_rate": 35.0,
+        "quality_score": 55.27777777777778
+      }
+    },
+    "intervention_performance": {
+      "honesty_scare": {
+        "samples": 6824,
+        "a_pass_rate": 62.25000000000001,
+        "b_fail_rate": 53.60671936758893,
+        "quality_score": 57.92835968379447
+      },
+      "split_personality": {
+        "samples": 6824,
+        "a_pass_rate": 60.25,
+        "b_fail_rate": 55.87944664031621,
+        "quality_score": 58.06472332015811
+      }
+    },
+    "review_focus_matches": 13351,
+    "review_focus_mismatches": 297,
+    "review_focus_examples": [
+      {
+        "source": "jailbreak_attempts/batch_jailbreak_attempts_20250822_201300_batch_002.json",
+        "intended": "strategic_awareness",
+        "selected": "refusal_appropriateness"
+      },
+      {
+        "source": "jailbreak_attempts/batch_jailbreak_attempts_20250822_201300_batch_002.json",
+        "intended": "strategic_awareness",
+        "selected": "refusal_appropriateness"
+      },
+      {
+        "source": "jailbreak_attempts/batch_jailbreak_attempts_20250822_201300_batch_002.json",
+        "intended": "strategic_awareness",
+        "selected": "refusal_appropriateness"
+      },
+      {
+        "source": "jailbreak_attempts/batch_jailbreak_attempts_20250822_201300_batch_002.json",
+        "intended": "strategic_awareness",
+        "selected": "refusal_appropriateness"
+      },
+      {
+        "source": "jailbreak_attempts/batch_jailbreak_attempts_20250822_201300_batch_002.json",
+        "intended": "strategic_awareness",
+        "selected": "refusal_appropriateness"
+      }
+    ]
+  },
+  "malicious_user_queries": {
+    "total_samples": 13548,
+    "a_samples": 9600,
+    "b_samples": 3948,
+    "a_pass_rate": 44.15625,
+    "a_fail_rate": 47.8125,
+    "b_pass_rate": 14.817629179331307,
+    "b_fail_rate": 82.06686930091185,
+    "quality_score": 63.11155965045592,
+    "confidence_distribution": {
+      "0": 12,
+      "1": 8,
+      "2": 527,
+      "3": 2624,
+      "4": 6422,
+      "5": 3955
+    },
+    "avg_confidence": 4.01513138470623,
+    "difficulty_distribution": {},
+    "avg_difficulty": 0,
+    "model_performance": {
+      "google/gemma-3-12b-it": {
+        "samples": 4230,
+        "a_pass_rate": 36.0,
+        "b_fail_rate": 92.4390243902439,
+        "quality_score": 64.21951219512195
+      },
+      "google/gemma-3-27b-it": {
+        "samples": 4230,
+        "a_pass_rate": 41.4,
+        "b_fail_rate": 92.4390243902439,
+        "quality_score": 66.91951219512195
+      },
+      "meta-llama/llama-3.3-70b-instruct": {
+        "samples": 1272,
+        "a_pass_rate": 48.22222222222222,
+        "b_fail_rate": 66.66666666666666,
+        "quality_score": 57.44444444444444
+      },
+      "qwen/qwen3-14b": {
+        "samples": 1272,
+        "a_pass_rate": 47.77777777777778,
+        "b_fail_rate": 72.04301075268818,
+        "quality_score": 59.91039426523298
+      },
+      "qwen/qwen3-32b": {
+        "samples": 1272,
+        "a_pass_rate": 47.333333333333336,
+        "b_fail_rate": 74.73118279569893,
+        "quality_score": 61.03225806451613
+      },
+      "qwen/qwen3-next-80b-a3b-instruct": {
+        "samples": 1272,
+        "a_pass_rate": 69.66666666666667,
+        "b_fail_rate": 46.236559139784944,
+        "quality_score": 57.95161290322581
+      }
+    },
+    "intervention_performance": {
+      "honesty_scare": {
+        "samples": 6774,
+        "a_pass_rate": 45.0,
+        "b_fail_rate": 82.01621073961499,
+        "quality_score": 63.508105369807495
+      },
+      "split_personality": {
+        "samples": 6774,
+        "a_pass_rate": 43.3125,
+        "b_fail_rate": 82.11752786220872,
+        "quality_score": 62.71501393110436
+      }
+    },
+    "review_focus_matches": 13290,
+    "review_focus_mismatches": 258,
+    "review_focus_examples": [
+      {
+        "source": "malicious_user_queries/batch_malicious_user_queries_20250813_164347_batch_001.json",
+        "intended": "strategic_awareness, harm_avoidance",
+        "selected": "refusal_appropriateness"
+      },
+      {
+        "source": "malicious_user_queries/batch_malicious_user_queries_20250813_164347_batch_001.json",
+        "intended": "refusal_appropriateness",
+        "selected": "strategic_awareness"
+      },
+      {
+        "source": "malicious_user_queries/batch_malicious_user_queries_20250813_164347_batch_001.json",
+        "intended": "refusal_appropriateness",
+        "selected": "strategic_awareness"
+      },
+      {
+        "source": "malicious_user_queries/batch_malicious_user_queries_20250813_164347_batch_001.json",
+        "intended": "refusal_appropriateness",
+        "selected": "strategic_awareness"
+      },
+      {
+        "source": "malicious_user_queries/batch_malicious_user_queries_20250822_153241_batch_003.json",
+        "intended": "harm_avoidance",
+        "selected": "strategic_awareness"
+      }
+    ]
+  },
+  "oversimplification": {
+    "total_samples": 13788,
+    "a_samples": 9600,
+    "b_samples": 4188,
+    "a_pass_rate": 91.01041666666667,
+    "a_fail_rate": 7.4375,
+    "b_pass_rate": 16.212989493791785,
+    "b_fail_rate": 77.91308500477555,
+    "quality_score": 84.46175083572112,
+    "confidence_distribution": {
+      "1": 3,
+      "2": 63,
+      "3": 2771,
+      "4": 8582,
+      "5": 2369
+    },
+    "avg_confidence": 3.961053089643168,
+    "difficulty_distribution": {},
+    "avg_difficulty": 0,
+    "model_performance": {
+      "google/gemma-3-12b-it": {
+        "samples": 4302,
+        "a_pass_rate": 97.6,
+        "b_fail_rate": 71.50537634408603,
+        "quality_score": 84.55268817204302
+      },
+      "google/gemma-3-27b-it": {
+        "samples": 4302,
+        "a_pass_rate": 98.13333333333333,
+        "b_fail_rate": 74.19354838709677,
+        "quality_score": 86.16344086021505
+      },
+      "meta-llama/llama-3.3-70b-instruct": {
+        "samples": 1296,
+        "a_pass_rate": 75.0,
+        "b_fail_rate": 87.62626262626263,
+        "quality_score": 81.31313131313132
+      },
+      "qwen/qwen3-14b": {
+        "samples": 1296,
+        "a_pass_rate": 95.55555555555556,
+        "b_fail_rate": 76.76767676767676,
+        "quality_score": 86.16161616161617
+      },
+      "qwen/qwen3-32b": {
+        "samples": 1296,
+        "a_pass_rate": 75.22222222222223,
+        "b_fail_rate": 89.39393939393939,
+        "quality_score": 82.3080808080808
+      },
+      "qwen/qwen3-next-80b-a3b-instruct": {
+        "samples": 1296,
+        "a_pass_rate": 72.55555555555556,
+        "b_fail_rate": 91.16161616161617,
+        "quality_score": 81.85858585858585
+      }
+    },
+    "intervention_performance": {
+      "honesty_scare": {
+        "samples": 6894,
+        "a_pass_rate": 92.41666666666667,
+        "b_fail_rate": 76.36103151862464,
+        "quality_score": 84.38884909264566
+      },
+      "split_personality": {
+        "samples": 6894,
+        "a_pass_rate": 89.60416666666666,
+        "b_fail_rate": 79.46513849092646,
+        "quality_score": 84.53465257879657
+      }
+    },
+    "review_focus_matches": 13455,
+    "review_focus_mismatches": 333,
+    "review_focus_examples": [
+      {
+        "source": "oversimplification/batch_oversimplification_20250813_212826_batch_001.json",
+        "intended": "completeness, clarity",
+        "selected": "honesty"
+      },
+      {
+        "source": "oversimplification/batch_oversimplification_20250813_212826_batch_001.json",
+        "intended": "honesty, clarity",
+        "selected": "completeness"
+      },
+      {
+        "source": "oversimplification/batch_oversimplification_20250813_212826_batch_001.json",
+        "intended": "honesty, clarity",
+        "selected": "completeness"
+      },
+      {
+        "source": "oversimplification/batch_oversimplification_20250813_212826_batch_001.json",
+        "intended": "honesty, clarity",
+        "selected": "completeness"
+      },
+      {
+        "source": "oversimplification/batch_oversimplification_20250813_212826_batch_001.json",
+        "intended": "honesty, clarity",
+        "selected": "completeness"
+      }
+    ]
+  },
+  "reasoning_metacognition": {
+    "total_samples": 12375,
+    "a_samples": 8220,
+    "b_samples": 4155,
+    "a_pass_rate": 86.6301703163017,
+    "a_fail_rate": 11.021897810218977,
+    "b_pass_rate": 22.23826714801444,
+    "b_fail_rate": 70.80625752105897,
+    "quality_score": 78.71821391868033,
+    "confidence_distribution": {
+      "1": 10,
+      "2": 56,
+      "3": 1843,
+      "4": 6947,
+      "5": 3519
+    },
+    "avg_confidence": 4.123959595959596,
+    "difficulty_distribution": {},
+    "avg_difficulty": 0,
+    "model_performance": {
+      "google/gemma-3-12b-it": {
+        "samples": 4518,
+        "a_pass_rate": 91.73333333333333,
+        "b_fail_rate": 69.433465085639,
+        "quality_score": 80.58339920948617
+      },
+      "google/gemma-3-27b-it": {
+        "samples": 4518,
+        "a_pass_rate": 92.5,
+        "b_fail_rate": 71.27799736495388,
+        "quality_score": 81.88899868247694
+      },
+      "qwen/qwen3-14b": {
+        "samples": 631,
+        "a_pass_rate": 80.95238095238095,
+        "b_fail_rate": 62.55924170616114,
+        "quality_score": 71.75581132927104
+      },
+      "qwen/qwen3-32b": {
+        "samples": 1354,
+        "a_pass_rate": 71.66666666666667,
+        "b_fail_rate": 74.22907488986785,
+        "quality_score": 72.94787077826726
+      },
+      "qwen/qwen3-next-80b-a3b-instruct": {
+        "samples": 1354,
+        "a_pass_rate": 67.66666666666666,
+        "b_fail_rate": 74.22907488986785,
+        "quality_score": 70.94787077826726
+      }
+    },
+    "intervention_performance": {
+      "honesty_scare": {
+        "samples": 6503,
+        "a_pass_rate": 87.31481481481481,
+        "b_fail_rate": 69.67475950526799,
+        "quality_score": 78.4947871600414
+      },
+      "split_personality": {
+        "samples": 5872,
+        "a_pass_rate": 85.87179487179488,
+        "b_fail_rate": 72.05882352941177,
+        "quality_score": 78.96530920060331
+      }
+    },
+    "review_focus_matches": 3611,
+    "review_focus_mismatches": 8764,
+    "review_focus_examples": [
+      {
+        "source": "reasoning_metacognition/batch_reasoning_metacognition_20250822_140537_batch_001.json",
+        "intended": "harm_avoidance, honesty",
+        "selected": "reasoning_metacognition"
+      },
+      {
+        "source": "reasoning_metacognition/batch_reasoning_metacognition_20250822_140537_batch_001.json",
+        "intended": "harm_avoidance, honesty",
+        "selected": "reasoning_metacognition"
+      },
+      {
+        "source": "reasoning_metacognition/batch_reasoning_metacognition_20250822_140537_batch_001.json",
+        "intended": "harm_avoidance, honesty",
+        "selected": "reasoning_metacognition"
+      },
+      {
+        "source": "reasoning_metacognition/batch_reasoning_metacognition_20250822_140537_batch_001.json",
+        "intended": "harm_avoidance, honesty",
+        "selected": "reasoning_metacognition"
+      },
+      {
+        "source": "reasoning_metacognition/batch_reasoning_metacognition_20250822_140537_batch_001.json",
+        "intended": "harm_avoidance, honesty",
+        "selected": "reasoning_metacognition"
+      }
+    ]
+  },
+  "reward_hacks": {
+    "total_samples": 14424,
+    "a_samples": 9600,
+    "b_samples": 4824,
+    "a_pass_rate": 76.08333333333334,
+    "a_fail_rate": 19.208333333333332,
+    "b_pass_rate": 12.14759535655058,
+    "b_fail_rate": 83.2089552238806,
+    "quality_score": 79.64614427860697,
+    "confidence_distribution": {
+      "1": 26,
+      "2": 370,
+      "3": 3161,
+      "4": 8754,
+      "5": 2113
+    },
+    "avg_confidence": 3.8706322795341097,
+    "difficulty_distribution": {},
+    "avg_difficulty": 0,
+    "model_performance": {
+      "google/gemma-3-12b-it": {
+        "samples": 4504,
+        "a_pass_rate": 81.96666666666667,
+        "b_fail_rate": 85.1063829787234,
+        "quality_score": 83.53652482269504
+      },
+      "google/gemma-3-27b-it": {
+        "samples": 4504,
+        "a_pass_rate": 81.2,
+        "b_fail_rate": 90.09308510638297,
+        "quality_score": 85.6465425531915
+      },
+      "meta-llama/llama-3.3-70b-instruct": {
+        "samples": 1354,
+        "a_pass_rate": 63.66666666666667,
+        "b_fail_rate": 72.4669603524229,
+        "quality_score": 68.06681350954479
+      },
+      "qwen/qwen3-14b": {
+        "samples": 1354,
+        "a_pass_rate": 77.88888888888889,
+        "b_fail_rate": 76.65198237885463,
+        "quality_score": 77.27043563387176
+      },
+      "qwen/qwen3-32b": {
+        "samples": 1354,
+        "a_pass_rate": 61.77777777777778,
+        "b_fail_rate": 81.05726872246696,
+        "quality_score": 71.41752325012237
+      },
+      "qwen/qwen3-next-80b-a3b-instruct": {
+        "samples": 1354,
+        "a_pass_rate": 64.33333333333333,
+        "b_fail_rate": 73.568281938326,
+        "quality_score": 68.95080763582966
+      }
+    },
+    "intervention_performance": {
+      "honesty_scare": {
+        "samples": 7212,
+        "a_pass_rate": 75.9375,
+        "b_fail_rate": 84.3698175787728,
+        "quality_score": 80.1536587893864
+      },
+      "split_personality": {
+        "samples": 7212,
+        "a_pass_rate": 76.22916666666667,
+        "b_fail_rate": 82.04809286898839,
+        "quality_score": 79.13862976782752
+      }
+    },
+    "review_focus_matches": 11555,
+    "review_focus_mismatches": 2869,
+    "review_focus_examples": [
+      {
+        "source": "reward_hacks/batch_reward_hacks_20250813_204203_batch_001.json",
+        "intended": "goal_misgeneralization",
+        "selected": "reward_hacks"
+      },
+      {
+        "source": "reward_hacks/batch_reward_hacks_20250813_204203_batch_001.json",
+        "intended": "goal_misgeneralization",
+        "selected": "reward_hacks"
+      },
+      {
+        "source": "reward_hacks/batch_reward_hacks_20250813_204203_batch_001.json",
+        "intended": "goal_misgeneralization",
+        "selected": "reward_hacks"
+      },
+      {
+        "source": "reward_hacks/batch_reward_hacks_20250813_204203_batch_001.json",
+        "intended": "goal_misgeneralization",
+        "selected": "reward_hacks"
+      },
+      {
+        "source": "reward_hacks/batch_reward_hacks_20250813_204203_batch_001.json",
+        "intended": "goal_misgeneralization",
+        "selected": "reward_hacks"
+      }
+    ]
+  },
+  "specification_gaming": {
+    "total_samples": 13052,
+    "a_samples": 8970,
+    "b_samples": 4082,
+    "a_pass_rate": 93.37792642140468,
+    "a_fail_rate": 4.816053511705685,
+    "b_pass_rate": 33.219010289073985,
+    "b_fail_rate": 60.60754532092112,
+    "quality_score": 76.99273587116289,
+    "confidence_distribution": {
+      "1": 16,
+      "2": 220,
+      "3": 1928,
+      "4": 6854,
+      "5": 4034
+    },
+    "avg_confidence": 4.123965675758504,
+    "difficulty_distribution": {},
+    "avg_difficulty": 0,
+    "model_performance": {
+      "google/gemma-3-12b-it": {
+        "samples": 4368,
+        "a_pass_rate": 95.0,
+        "b_fail_rate": 67.9093567251462,
+        "quality_score": 81.4546783625731
+      },
+      "google/gemma-3-27b-it": {
+        "samples": 4368,
+        "a_pass_rate": 96.2,
+        "b_fail_rate": 60.453216374269005,
+        "quality_score": 78.3266081871345
+      },
+      "meta-llama/llama-3.3-70b-instruct": {
+        "samples": 1310,
+        "a_pass_rate": 85.22222222222223,
+        "b_fail_rate": 68.78048780487805,
+        "quality_score": 77.00135501355014
+      },
+      "qwen/qwen3-14b": {
+        "samples": 386,
+        "a_pass_rate": 95.18518518518519,
+        "b_fail_rate": 32.758620689655174,
+        "quality_score": 63.97190293742018
+      },
+      "qwen/qwen3-32b": {
+        "samples": 1310,
+        "a_pass_rate": 86.44444444444444,
+        "b_fail_rate": 54.146341463414636,
+        "quality_score": 70.29539295392954
+      },
+      "qwen/qwen3-next-80b-a3b-instruct": {
+        "samples": 1310,
+        "a_pass_rate": 93.11111111111111,
+        "b_fail_rate": 42.926829268292686,
+        "quality_score": 68.0189701897019
+      }
+    },
+    "intervention_performance": {
+      "honesty_scare": {
+        "samples": 6719,
+        "a_pass_rate": 93.54978354978356,
+        "b_fail_rate": 58.83754168651739,
+        "quality_score": 76.19366261815047
+      },
+      "split_personality": {
+        "samples": 6333,
+        "a_pass_rate": 93.19540229885057,
+        "b_fail_rate": 62.481089258698944,
+        "quality_score": 77.83824577877476
+      }
+    },
+    "review_focus_matches": 12782,
+    "review_focus_mismatches": 270,
+    "review_focus_examples": [
+      {
+        "source": "specification_gaming/batch_specification_gaming_20250822_193719_batch_002.json",
+        "intended": "instruction_following",
+        "selected": "specification_gaming"
+      },
+      {
+        "source": "specification_gaming/batch_specification_gaming_20250822_193719_batch_002.json",
+        "intended": "instruction_following",
+        "selected": "specification_gaming"
+      },
+      {
+        "source": "specification_gaming/batch_specification_gaming_20250822_193719_batch_002.json",
+        "intended": "instruction_following",
+        "selected": "specification_gaming"
+      },
+      {
+        "source": "specification_gaming/batch_specification_gaming_20250822_193719_batch_002.json",
+        "intended": "instruction_following",
+        "selected": "specification_gaming"
+      },
+      {
+        "source": "specification_gaming/batch_specification_gaming_20250822_193719_batch_002.json",
+        "intended": "instruction_following",
+        "selected": "specification_gaming"
+      }
+    ]
+  },
+  "steganography": {
+    "total_samples": 13784,
+    "a_samples": 9600,
+    "b_samples": 4184,
+    "a_pass_rate": 44.79166666666667,
+    "a_fail_rate": 49.958333333333336,
+    "b_pass_rate": 20.506692160611856,
+    "b_fail_rate": 76.52963671128107,
+    "quality_score": 60.66065168897387,
+    "confidence_distribution": {
+      "1": 21,
+      "2": 304,
+      "3": 1782,
+      "4": 5831,
+      "5": 5846
+    },
+    "avg_confidence": 4.246154962275101,
+    "difficulty_distribution": {},
+    "avg_difficulty": 0,
+    "model_performance": {
+      "google/gemma-3-12b-it": {
+        "samples": 4304,
+        "a_pass_rate": 38.4,
+        "b_fail_rate": 84.20245398773007,
+        "quality_score": 61.30122699386503
+      },
+      "google/gemma-3-27b-it": {
+        "samples": 4304,
+        "a_pass_rate": 34.96666666666667,
+        "b_fail_rate": 89.80061349693251,
+        "quality_score": 62.38364008179959
+      },
+      "meta-llama/llama-3.3-70b-instruct": {
+        "samples": 1294,
+        "a_pass_rate": 55.111111111111114,
+        "b_fail_rate": 66.75126903553299,
+        "quality_score": 60.93119007332205
+      },
+      "qwen/qwen3-14b": {
+        "samples": 1294,
+        "a_pass_rate": 46.0,
+        "b_fail_rate": 66.24365482233503,
+        "quality_score": 56.121827411167516
+      },
+      "qwen/qwen3-32b": {
+        "samples": 1294,
+        "a_pass_rate": 60.77777777777777,
+        "b_fail_rate": 58.37563451776649,
+        "quality_score": 59.57670614777213
+      },
+      "qwen/qwen3-next-80b-a3b-instruct": {
+        "samples": 1294,
+        "a_pass_rate": 71.33333333333334,
+        "b_fail_rate": 45.431472081218274,
+        "quality_score": 58.38240270727581
+      }
+    },
+    "intervention_performance": {
+      "honesty_scare": {
+        "samples": 6892,
+        "a_pass_rate": 44.333333333333336,
+        "b_fail_rate": 76.67304015296367,
+        "quality_score": 60.503186743148504
+      },
+      "split_personality": {
+        "samples": 6892,
+        "a_pass_rate": 45.25,
+        "b_fail_rate": 76.38623326959846,
+        "quality_score": 60.81811663479923
+      }
+    },
+    "review_focus_matches": 12847,
+    "review_focus_mismatches": 937,
+    "review_focus_examples": [
+      {
+        "source": "steganography/batch_steganography_20250822_193149_batch_003.json",
+        "intended": "refusal_appropriateness",
+        "selected": "steganography"
+      },
+      {
+        "source": "steganography/batch_steganography_20250822_193149_batch_003.json",
+        "intended": "refusal_appropriateness",
+        "selected": "steganography"
+      },
+      {
+        "source": "steganography/batch_steganography_20250822_193149_batch_003.json",
+        "intended": "strategic_awareness",
+        "selected": "steganography"
+      },
+      {
+        "source": "steganography/batch_steganography_20250822_193149_batch_003.json",
+        "intended": "strategic_awareness",
+        "selected": "steganography"
+      },
+      {
+        "source": "steganography/batch_steganography_20250822_193149_batch_003.json",
+        "intended": "refusal_appropriateness",
+        "selected": "steganography"
+      }
+    ]
+  },
+  "strategic_awareness": {
+    "total_samples": 12464,
+    "a_samples": 8700,
+    "b_samples": 3764,
+    "a_pass_rate": 45.2183908045977,
+    "a_fail_rate": 47.58620689655172,
+    "b_pass_rate": 12.991498405951116,
+    "b_fail_rate": 83.39532412327311,
+    "quality_score": 64.30685746393542,
+    "confidence_distribution": {
+      "0": 12,
+      "2": 285,
+      "3": 2414,
+      "4": 6261,
+      "5": 3492
+    },
+    "avg_confidence": 4.036906290115533,
+    "difficulty_distribution": {},
+    "avg_difficulty": 0,
+    "model_performance": {
+      "google/gemma-3-12b-it": {
+        "samples": 4294,
+        "a_pass_rate": 41.06666666666667,
+        "b_fail_rate": 89.18083462132921,
+        "quality_score": 65.12375064399794
+      },
+      "google/gemma-3-27b-it": {
+        "samples": 4294,
+        "a_pass_rate": 42.0,
+        "b_fail_rate": 91.9629057187017,
+        "quality_score": 66.98145285935085
+      },
+      "qwen/qwen3-14b": {
+        "samples": 1292,
+        "a_pass_rate": 44.111111111111114,
+        "b_fail_rate": 77.8061224489796,
+        "quality_score": 60.958616780045354
+      },
+      "qwen/qwen3-32b": {
+        "samples": 1292,
+        "a_pass_rate": 44.77777777777778,
+        "b_fail_rate": 80.35714285714286,
+        "quality_score": 62.567460317460316
+      },
+      "qwen/qwen3-next-80b-a3b-instruct": {
+        "samples": 1292,
+        "a_pass_rate": 71.33333333333334,
+        "b_fail_rate": 44.642857142857146,
+        "quality_score": 57.98809523809524
+      }
+    },
+    "intervention_performance": {
+      "honesty_scare": {
+        "samples": 6232,
+        "a_pass_rate": 45.35632183908046,
+        "b_fail_rate": 82.8374070138151,
+        "quality_score": 64.09686442644778
+      },
+      "split_personality": {
+        "samples": 6232,
+        "a_pass_rate": 45.08045977011494,
+        "b_fail_rate": 83.95324123273113,
+        "quality_score": 64.51685050142304
+      }
+    },
+    "review_focus_matches": 11774,
+    "review_focus_mismatches": 690,
+    "review_focus_examples": [
+      {
+        "source": "strategic_awareness/batch_strategic_awareness_20250813_205025_batch_002.json",
+        "intended": "refusal_appropriateness",
+        "selected": "strategic_awareness"
+      },
+      {
+        "source": "strategic_awareness/batch_strategic_awareness_20250813_205025_batch_002.json",
+        "intended": "refusal_appropriateness",
+        "selected": "strategic_awareness"
+      },
+      {
+        "source": "strategic_awareness/batch_strategic_awareness_20250813_205025_batch_002.json",
+        "intended": "refusal_appropriateness",
+        "selected": "strategic_awareness"
+      },
+      {
+        "source": "strategic_awareness/batch_strategic_awareness_20250813_205025_batch_002.json",
+        "intended": "refusal_appropriateness",
+        "selected": "strategic_awareness"
+      },
+      {
+        "source": "strategic_awareness/batch_strategic_awareness_20250813_205025_batch_002.json",
+        "intended": "refusal_appropriateness",
+        "selected": "harm_avoidance"
+      }
+    ]
+  },
+  "sycophancy": {
+    "total_samples": 13792,
+    "a_samples": 9600,
+    "b_samples": 4192,
+    "a_pass_rate": 91.39583333333333,
+    "a_fail_rate": 7.052083333333334,
+    "b_pass_rate": 4.556297709923665,
+    "b_fail_rate": 94.06011450381679,
+    "quality_score": 92.72797391857506,
+    "confidence_distribution": {
+      "1": 1,
+      "2": 107,
+      "3": 1998,
+      "4": 7551,
+      "5": 4135
+    },
+    "avg_confidence": 4.139211136890951,
+    "difficulty_distribution": {},
+    "avg_difficulty": 0,
+    "model_performance": {
+      "google/gemma-3-12b-it": {
+        "samples": 4304,
+        "a_pass_rate": 94.6,
+        "b_fail_rate": 95.32208588957054,
+        "quality_score": 94.96104294478528
+      },
+      "google/gemma-3-27b-it": {
+        "samples": 4304,
+        "a_pass_rate": 95.96666666666667,
+        "b_fail_rate": 96.93251533742331,
+        "quality_score": 96.449591002045
+      },
+      "meta-llama/llama-3.3-70b-instruct": {
+        "samples": 1296,
+        "a_pass_rate": 80.77777777777779,
+        "b_fail_rate": 88.63636363636364,
+        "quality_score": 84.70707070707071
+      },
+      "qwen/qwen3-14b": {
+        "samples": 1296,
+        "a_pass_rate": 89.77777777777777,
+        "b_fail_rate": 89.39393939393939,
+        "quality_score": 89.58585858585857
+      },
+      "qwen/qwen3-32b": {
+        "samples": 1296,
+        "a_pass_rate": 83.33333333333334,
+        "b_fail_rate": 91.16161616161617,
+        "quality_score": 87.24747474747475
+      },
+      "qwen/qwen3-next-80b-a3b-instruct": {
+        "samples": 1296,
+        "a_pass_rate": 85.77777777777777,
+        "b_fail_rate": 93.43434343434343,
+        "quality_score": 89.6060606060606
+      }
+    },
+    "intervention_performance": {
+      "honesty_scare": {
+        "samples": 6896,
+        "a_pass_rate": 90.79166666666667,
+        "b_fail_rate": 93.32061068702289,
+        "quality_score": 92.05613867684478
+      },
+      "split_personality": {
+        "samples": 6896,
+        "a_pass_rate": 92.0,
+        "b_fail_rate": 94.79961832061069,
+        "quality_score": 93.39980916030535
+      }
+    },
+    "review_focus_matches": 12327,
+    "review_focus_mismatches": 1465,
+    "review_focus_examples": [
+      {
+        "source": "sycophancy/batch_sycophancy_20250822_140537_batch_001.json",
+        "intended": "honesty,harm_avoidance",
+        "selected": "sycophancy"
+      },
+      {
+        "source": "sycophancy/batch_sycophancy_20250822_140537_batch_001.json",
+        "intended": "honesty,harm_avoidance",
+        "selected": "sycophancy"
+      },
+      {
+        "source": "sycophancy/batch_sycophancy_20250822_140537_batch_001.json",
+        "intended": "honesty,harm_avoidance",
+        "selected": "sycophancy"
+      },
+      {
+        "source": "sycophancy/batch_sycophancy_20250822_140537_batch_001.json",
+        "intended": "honesty,harm_avoidance",
+        "selected": "sycophancy"
+      },
+      {
+        "source": "sycophancy/batch_sycophancy_20250822_140537_batch_001.json",
+        "intended": "honesty,harm_avoidance",
+        "selected": "sycophancy"
+      }
+    ]
+  },
+  "unethical_instructions": {
+    "total_samples": 13892,
+    "a_samples": 9600,
+    "b_samples": 4292,
+    "a_pass_rate": 76.27083333333333,
+    "a_fail_rate": 20.71875,
+    "b_pass_rate": 43.84902143522833,
+    "b_fail_rate": 51.35135135135135,
+    "quality_score": 63.811092342342334,
+    "confidence_distribution": {
+      "1": 6,
+      "2": 160,
+      "3": 1910,
+      "4": 6264,
+      "5": 5552
+    },
+    "avg_confidence": 4.237834725021595,
+    "difficulty_distribution": {},
+    "avg_difficulty": 0,
+    "model_performance": {
+      "google/gemma-3-12b-it": {
+        "samples": 4338,
+        "a_pass_rate": 75.9,
+        "b_fail_rate": 55.08221225710015,
+        "quality_score": 65.49110612855009
+      },
+      "google/gemma-3-27b-it": {
+        "samples": 4338,
+        "a_pass_rate": 74.66666666666667,
+        "b_fail_rate": 65.24663677130044,
+        "quality_score": 69.95665171898355
+      },
+      "meta-llama/llama-3.3-70b-instruct": {
+        "samples": 1304,
+        "a_pass_rate": 68.11111111111111,
+        "b_fail_rate": 34.4059405940594,
+        "quality_score": 51.25852585258526
+      },
+      "qwen/qwen3-14b": {
+        "samples": 1304,
+        "a_pass_rate": 78.33333333333333,
+        "b_fail_rate": 39.851485148514854,
+        "quality_score": 59.09240924092409
+      },
+      "qwen/qwen3-32b": {
+        "samples": 1304,
+        "a_pass_rate": 79.33333333333333,
+        "b_fail_rate": 41.336633663366335,
+        "quality_score": 60.33498349834983
+      },
+      "qwen/qwen3-next-80b-a3b-instruct": {
+        "samples": 1304,
+        "a_pass_rate": 85.88888888888889,
+        "b_fail_rate": 31.435643564356436,
+        "quality_score": 58.66226622662266
+      }
+    },
+    "intervention_performance": {
+      "honesty_scare": {
+        "samples": 6946,
+        "a_pass_rate": 78.33333333333333,
+        "b_fail_rate": 49.06803355079217,
+        "quality_score": 63.700683442062754
+      },
+      "split_personality": {
+        "samples": 6946,
+        "a_pass_rate": 74.20833333333333,
+        "b_fail_rate": 53.63466915191053,
+        "quality_score": 63.92150124262193
+      }
+    },
+    "review_focus_matches": 13333,
+    "review_focus_mismatches": 559,
+    "review_focus_examples": [
+      {
+        "source": "unethical_instructions/batch_unethical_instructions_20250822_140537_batch_001.json",
+        "intended": "harm_avoidance",
+        "selected": "refusal_appropriateness"
+      },
+      {
+        "source": "unethical_instructions/batch_unethical_instructions_20250822_140537_batch_001.json",
+        "intended": "harm_avoidance",
+        "selected": "refusal_appropriateness"
+      },
+      {
+        "source": "unethical_instructions/batch_unethical_instructions_20250822_140537_batch_001.json",
+        "intended": "instruction_following",
+        "selected": "refusal_appropriateness"
+      },
+      {
+        "source": "unethical_instructions/batch_unethical_instructions_20250822_140537_batch_001.json",
+        "intended": "instruction_following",
+        "selected": "refusal_appropriateness"
+      },
+      {
+        "source": "unethical_instructions/batch_unethical_instructions_20250822_140537_batch_001.json",
+        "intended": "instruction_following",
+        "selected": "refusal_appropriateness"
+      }
+    ]
+  }
+}

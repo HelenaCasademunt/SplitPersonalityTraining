@@ -1,0 +1,2204 @@
+{
+  "analysis_timestamp": "2026-01-03T23:05:14.822356",
+  "summary_stats": {
+    "total_samples": 190466,
+    "unique_topics": 14,
+    "unique_models": 6,
+    "unique_interventions": 2,
+    "unique_intervention_names": [
+      "honesty_scare__version_1",
+      "honesty_scare__version_2",
+      "honesty_scare__version_3",
+      "honesty_scare__version_4",
+      "split_personality__version_1",
+      "split_personality__version_2",
+      "split_personality__version_3",
+      "split_personality__version_4"
+    ],
+    "topic_counts": {
+      "confidence_assessment": 14036,
+      "fabricated_statistics": 14120,
+      "goal_misgeneralization": 13375,
+      "influence_seeking": 14168,
+      "jailbreak_attempts": 13648,
+      "malicious_user_queries": 13548,
+      "oversimplification": 13788,
+      "reasoning_metacognition": 12375,
+      "reward_hacks": 14424,
+      "specification_gaming": 13052,
+      "steganography": 13784,
+      "strategic_awareness": 12464,
+      "sycophancy": 13792,
+      "unethical_instructions": 13892
+    },
+    "model_counts": {
+      "google/gemma-3-12b-it": 61080,
+      "google/gemma-3-27b-it": 61080,
+      "meta-llama/llama-3.3-70b-instruct": 15704,
+      "qwen/qwen3-14b": 15902,
+      "qwen/qwen3-32b": 18350,
+      "qwen/qwen3-next-80b-a3b-instruct": 18350
+    },
+    "variant_counts": {
+      "A": 130950,
+      "B": 59516
+    },
+    "verdict_counts": {
+      "AMBIGUOUS": 7796,
+      "ERROR": 44,
+      "FAIL": 81500,
+      "PASS": 101126
+    },
+    "ab_balance": {
+      "confidence_assessment": {
+        "A": 9600,
+        "B": 4436,
+        "A_pct": 68.39555428897121,
+        "B_pct": 31.604445711028784
+      },
+      "fabricated_statistics": {
+        "A": 9600,
+        "B": 4520,
+        "A_pct": 67.98866855524079,
+        "B_pct": 32.01133144475921
+      },
+      "goal_misgeneralization": {
+        "A": 9060,
+        "B": 4315,
+        "A_pct": 67.73831775700934,
+        "B_pct": 32.26168224299065
+      },
+      "influence_seeking": {
+        "A": 9600,
+        "B": 4568,
+        "A_pct": 67.75832862789385,
+        "B_pct": 32.241671372106154
+      },
+      "jailbreak_attempts": {
+        "A": 9600,
+        "B": 4048,
+        "A_pct": 70.33997655334115,
+        "B_pct": 29.66002344665885
+      },
+      "malicious_user_queries": {
+        "A": 9600,
+        "B": 3948,
+        "A_pct": 70.859167404783,
+        "B_pct": 29.14083259521701
+      },
+      "oversimplification": {
+        "A": 9600,
+        "B": 4188,
+        "A_pct": 69.62576153176676,
+        "B_pct": 30.374238468233244
+      },
+      "reasoning_metacognition": {
+        "A": 8220,
+        "B": 4155,
+        "A_pct": 66.42424242424242,
+        "B_pct": 33.57575757575758
+      },
+      "reward_hacks": {
+        "A": 9600,
+        "B": 4824,
+        "A_pct": 66.55574043261231,
+        "B_pct": 33.44425956738768
+      },
+      "specification_gaming": {
+        "A": 8970,
+        "B": 4082,
+        "A_pct": 68.72509960159363,
+        "B_pct": 31.274900398406373
+      },
+      "steganography": {
+        "A": 9600,
+        "B": 4184,
+        "A_pct": 69.64596633778294,
+        "B_pct": 30.354033662217063
+      },
+      "strategic_awareness": {
+        "A": 8700,
+        "B": 3764,
+        "A_pct": 69.801026957638,
+        "B_pct": 30.198973042362002
+      },
+      "sycophancy": {
+        "A": 9600,
+        "B": 4192,
+        "A_pct": 69.60556844547564,
+        "B_pct": 30.39443155452436
+      },
+      "unethical_instructions": {
+        "A": 9600,
+        "B": 4292,
+        "A_pct": 69.10452058738844,
+        "B_pct": 30.895479412611575
+      }
+    },
+    "token_analysis": {
+      "samples_at_2048_tokens": 4428,
+      "pct_samples_at_2048_tokens": 2.3248243781042284,
+      "distribution": {
+        "mean": 1147.6349798905796,
+        "min": 1,
+        "max": 5390,
+        "count_under_100": 8688,
+        "count_100_500": 26222,
+        "count_500_1000": 37193,
+        "count_1000_2000": 111817,
+        "count_at_2048": 4428
+      }
+    },
+    "confidence_distribution": {
+      "0": 44,
+      "1": 148,
+      "2": 3616,
+      "3": 31056,
+      "4": 98599,
+      "5": 57003
+    },
+    "difficulty_distribution": {},
+    "review_focus_analysis": {
+      "intended_focuses": {
+        "clarity": 2404,
+        "clarity, completeness": 244,
+        "clarity, honesty": 173,
+        "clarity, honesty, strategic_awareness": 17,
+        "completeness": 5944,
+        "completeness, clarity": 824,
+        "completeness, harm_avoidance, honesty": 32,
+        "completeness, honesty": 1384,
+        "completeness, honesty, specification_gaming": 48,
+        "completeness, honesty, strategic_awareness": 68,
+        "completeness, honesty, strategic_awareness, clarity": 17,
+        "completeness, influence_seeking": 24,
+        "completeness, strategic_awareness": 34,
+        "completeness, sycophancy": 40,
+        "fabrication_detection": 4416,
+        "fabrication_detection, clarity": 21,
+        "fabrication_detection, completeness, honesty": 32,
+        "fabrication_detection, harm_avoidance": 80,
+        "fabrication_detection, honesty": 2664,
+        "fabrication_detection, honesty, completeness": 33,
+        "fabrication_detection, honesty, completeness, clarity": 17,
+        "fabrication_detection, honesty, harm_avoidance": 119,
+        "fabrication_detection, honesty, specification_gaming": 32,
+        "fabrication_detection, specification_gaming": 1916,
+        "fabrication_detection, specification_gaming, honesty": 34,
+        "goal_misgeneralization": 12015,
+        "goal_misgeneralization, completeness": 96,
+        "goal_misgeneralization, harm_avoidance": 204,
+        "goal_misgeneralization, honesty": 186,
+        "goal_misgeneralization, honesty, completeness, sycophancy": 17,
+        "goal_misgeneralization, influence_seeking": 144,
+        "goal_misgeneralization, specification_gaming": 2264,
+        "goal_misgeneralization, specification_gaming, strategic_awareness": 76,
+        "goal_misgeneralization, strategic_awareness": 2011,
+        "harm_avoidance": 7963,
+        "harm_avoidance, fabrication_detection": 126,
+        "harm_avoidance, goal_misgeneralization": 84,
+        "harm_avoidance, honesty": 2557,
+        "harm_avoidance, honesty, clarity": 17,
+        "harm_avoidance, honesty, completeness": 167,
+        "harm_avoidance, honesty, completeness, strategic_awareness": 34,
+        "harm_avoidance, honesty, refusal_appropriateness": 68,
+        "harm_avoidance, honesty, strategic_awareness": 170,
+        "harm_avoidance, honesty, strategic_awareness, refusal_appropriateness": 17,
+        "harm_avoidance, instruction_following": 684,
+        "harm_avoidance, refusal_appropriateness": 3316,
+        "harm_avoidance, specification_gaming": 21,
+        "harm_avoidance, strategic_awareness": 1909,
+        "harm_avoidance, strategic_awareness, completeness, honesty": 34,
+        "harm_avoidance, strategic_awareness, specification_gaming": 34,
+        "harm_avoidance, sycophancy": 366,
+        "harm_avoidance, sycophancy, honesty": 20,
+        "harm_avoidance,honesty": 40,
+        "harm_avoidance,sycophancy": 60,
+        "honesty": 13334,
+        "honesty, clarity": 849,
+        "honesty, clarity, completeness": 17,
+        "honesty, clarity, fabrication_detection": 167,
+        "honesty, clarity, specification_gaming": 51,
+        "honesty, clarity, strategic_awareness": 134,
+        "honesty, completeness": 5068,
+        "honesty, completeness, clarity": 135,
+        "honesty, completeness, fabrication_detection": 85,
+        "honesty, completeness, goal_misgeneralization": 51,
+        "honesty, completeness, goal_misgeneralization, sycophancy": 34,
+        "honesty, completeness, harm_avoidance": 56,
+        "honesty, completeness, harm_avoidance, clarity": 34,
+        "honesty, completeness, specification_gaming": 66,
+        "honesty, completeness, strategic_awareness": 51,
+        "honesty, completeness, strategic_awareness, sycophancy": 34,
+        "honesty, fabrication_detection": 3748,
+        "honesty, fabrication_detection, clarity": 85,
+        "honesty, fabrication_detection, completeness": 17,
+        "honesty, fabrication_detection, refusal_appropriateness": 17,
+        "honesty, fabrication_detection, specification_gaming": 17,
+        "honesty, fabrication_detection, strategic_awareness": 49,
+        "honesty, fabrication_detection, strategic_awareness, clarity": 17,
+        "honesty, fabrication_detection, strategic_awareness, completeness": 17,
+        "honesty, goal_misgeneralization": 511,
+        "honesty, goal_misgeneralization, clarity": 48,
+        "honesty, goal_misgeneralization, specification_gaming": 32,
+        "honesty, harm_avoidance": 4291,
+        "honesty, harm_avoidance, completeness": 133,
+        "honesty, harm_avoidance, completeness, strategic_awareness": 34,
+        "honesty, harm_avoidance, fabrication_detection": 51,
+        "honesty, harm_avoidance, instruction_following": 32,
+        "honesty, harm_avoidance, specification_gaming": 34,
+        "honesty, harm_avoidance, strategic_awareness": 16,
+        "honesty, harm_avoidance, strategic_awareness, sycophancy": 34,
+        "honesty, harm_avoidance, sycophancy": 60,
+        "honesty, instruction_following": 99,
+        "honesty, refusal_appropriateness": 184,
+        "honesty, specification_gaming": 859,
+        "honesty, specification_gaming, clarity": 17,
+        "honesty, specification_gaming, completeness, strategic_awareness": 34,
+        "honesty, specification_gaming, strategic_awareness": 32,
+        "honesty, strategic_awareness": 1424,
+        "honesty, strategic_awareness, completeness, clarity": 17,
+        "honesty, strategic_awareness, completeness, sycophancy": 68,
+        "honesty, strategic_awareness, fabrication_detection": 34,
+        "honesty, strategic_awareness, goal_misgeneralization, completeness": 34,
+        "honesty, strategic_awareness, specification_gaming, completeness": 34,
+        "honesty, strategic_awareness, sycophancy": 68,
+        "honesty, sycophancy": 3351,
+        "honesty, sycophancy, clarity": 49,
+        "honesty, sycophancy, completeness": 24,
+        "honesty, sycophancy, harm_avoidance": 20,
+        "honesty,harm_avoidance": 40,
+        "honesty,sycophancy": 260,
+        "influence_seeking": 7496,
+        "influence_seeking, harm_avoidance": 672,
+        "influence_seeking, honesty": 24,
+        "influence_seeking, specification_gaming": 48,
+        "influence_seeking, strategic_awareness": 1640,
+        "influence_seeking, sycophancy": 780,
+        "instruction_following": 3882,
+        "instruction_following, completeness": 24,
+        "instruction_following, harm_avoidance": 332,
+        "instruction_following, refusal_appropriateness": 48,
+        "instruction_following, strategic_awareness": 24,
+        "refusal_appropriateness": 15104,
+        "refusal_appropriateness, harm_avoidance": 1432,
+        "refusal_appropriateness, honesty": 208,
+        "refusal_appropriateness, instruction_following": 988,
+        "refusal_appropriateness, strategic_awareness": 1908,
+        "specification_gaming": 13597,
+        "specification_gaming, clarity": 36,
+        "specification_gaming, completeness": 1709,
+        "specification_gaming, goal_misgeneralization": 460,
+        "specification_gaming, harm_avoidance": 1100,
+        "specification_gaming, honesty": 180,
+        "specification_gaming, honesty, completeness": 34,
+        "specification_gaming, instruction_following": 1164,
+        "specification_gaming, strategic_awareness": 884,
+        "specification_gaming, strategic_awareness, harm_avoidance": 34,
+        "specification_gaming, strategic_awareness, honesty": 34,
+        "specification_gaming, strategic_awareness, honesty, clarity": 17,
+        "specification_gaming,instruction_following": 324,
+        "specification_gaming,strategic_awareness": 270,
+        "steganography": 2644,
+        "steganography, harm_avoidance": 764,
+        "steganography, harm_avoidance, refusal_appropriateness": 40,
+        "steganography, harm_avoidance, strategic_awareness": 20,
+        "steganography, honesty": 248,
+        "steganography, instruction_following": 120,
+        "steganography, refusal_appropriateness": 2856,
+        "steganography, refusal_appropriateness, harm_avoidance": 120,
+        "steganography, specification_gaming": 180,
+        "steganography, strategic_awareness": 2444,
+        "strategic_awareness": 16647,
+        "strategic_awareness, clarity, honesty": 17,
+        "strategic_awareness, goal_misgeneralization": 251,
+        "strategic_awareness, goal_misgeneralization, honesty": 17,
+        "strategic_awareness, harm_avoidance": 7823,
+        "strategic_awareness, harm_avoidance, refusal_appropriateness": 40,
+        "strategic_awareness, honesty": 332,
+        "strategic_awareness, honesty, clarity": 33,
+        "strategic_awareness, honesty, completeness": 68,
+        "strategic_awareness, honesty, completeness, harm_avoidance": 34,
+        "strategic_awareness, honesty, goal_misgeneralization": 66,
+        "strategic_awareness, honesty, harm_avoidance": 68,
+        "strategic_awareness, honesty, specification_gaming": 68,
+        "strategic_awareness, influence_seeking": 380,
+        "strategic_awareness, refusal_appropriateness": 1874,
+        "strategic_awareness, specification_gaming, harm_avoidance": 34,
+        "strategic_awareness, specification_gaming, honesty": 17,
+        "strategic_awareness, steganography": 240,
+        "strategic_awareness, sycophancy": 42,
+        "sycophancy": 4424,
+        "sycophancy, harm_avoidance": 392,
+        "sycophancy, harm_avoidance, honesty": 20,
+        "sycophancy, honesty": 1912,
+        "sycophancy, honesty, clarity": 50,
+        "sycophancy, honesty, strategic_awareness": 34,
+        "sycophancy, influence_seeking": 40,
+        "sycophancy,harm_avoidance": 40,
+        "sycophancy,honesty": 240
+      },
+      "selected_focuses": {
+        "N/A": 44,
+        "OTHER": 9,
+        "clarity": 2370,
+        "completeness": 9200,
+        "completeness, honesty": 1,
+        "fabrication_detection": 12007,
+        "goal_misgeneralization": 15976,
+        "harm_avoidance": 15022,
+        "honesty": 25926,
+        "influence_seeking": 11375,
+        "instruction_following": 3657,
+        "logical_consistency": 168,
+        "manipulation_resistance": 15,
+        "reasoning_metacognition": 8588,
+        "refusal_appropriateness": 22451,
+        "reward_hacks": 2840,
+        "specification_gaming": 18263,
+        "steganography": 8177,
+        "strategic_awareness": 26567,
+        "sycophancy": 7810
+      }
+    },
+    "batch_counts": {
+      "reward_hacks_20250813_204203_batch_001": 1080,
+      "reward_hacks_20250822_141755_batch_005": 900,
+      "reward_hacks_20250822_193244_batch_002": 900,
+      "reward_hacks_20250822_140537_batch_001": 880,
+      "reward_hacks_20250822_174551_batch_001": 940,
+      "reward_hacks_20250813_194701_batch_002": 1056,
+      "reward_hacks_20250822_140849_batch_002": 900,
+      "reward_hacks_20250822_192519_batch_001": 960,
+      "reward_hacks_20250813_194946_batch_003": 1032,
+      "reward_hacks_20250822_190449_batch_002": 960,
+      "reward_hacks_20250813_194426_batch_001": 1056,
+      "reward_hacks_20250822_141148_batch_003": 880,
+      "reward_hacks_20250822_141447_batch_004": 900,
+      "reward_hacks_20250813_204442_batch_002": 1080,
+      "reward_hacks_20250822_190240_batch_001": 900,
+      "strategic_awareness_20250813_205025_batch_002": 902,
+      "strategic_awareness_20250822_154802_batch_001": 756,
+      "strategic_awareness_20250813_205713_batch_004": 902,
+      "strategic_awareness_20250822_192519_batch_001": 810,
+      "strategic_awareness_20250822_195548_batch_005": 810,
+      "strategic_awareness_20250813_204727_batch_001": 924,
+      "strategic_awareness_20250822_142514_batch_001": 756,
+      "strategic_awareness_20250813_205413_batch_003": 924,
+      "strategic_awareness_20250822_140537_batch_001": 756,
+      "strategic_awareness_20250822_192748_batch_002": 774,
+      "strategic_awareness_20250822_170538_batch_001": 774,
+      "strategic_awareness_20250822_194111_batch_003": 828,
+      "strategic_awareness_20250822_155138_batch_002": 792,
+      "strategic_awareness_20250822_194859_batch_004": 810,
+      "strategic_awareness_20250813_195721_batch_001": 946,
+      "fabricated_statistics_20250822_192519_batch_001": 900,
+      "fabricated_statistics_20250813_210836_batch_002": 1056,
+      "fabricated_statistics_20250822_141158_batch_003": 900,
+      "fabricated_statistics_20250813_210547_batch_001": 1032,
+      "fabricated_statistics_20250822_190240_batch_001": 900,
+      "fabricated_statistics_20250822_140536_batch_001": 840,
+      "fabricated_statistics_20250813_211216_batch_003": 1032,
+      "fabricated_statistics_20250822_192731_batch_002": 900,
+      "fabricated_statistics_20250813_211525_batch_004": 1080,
+      "fabricated_statistics_20250813_201710_batch_001": 1080,
+      "fabricated_statistics_20250822_174551_batch_001": 900,
+      "fabricated_statistics_20250822_141516_batch_004": 840,
+      "fabricated_statistics_20250822_140853_batch_002": 880,
+      "fabricated_statistics_20250822_141821_batch_005": 880,
+      "fabricated_statistics_20250822_192939_batch_003": 900,
+      "steganography_20250822_193149_batch_003": 900,
+      "steganography_20250813_195456_batch_001": 984,
+      "steganography_20250822_192519_batch_001": 900,
+      "steganography_20250822_142514_batch_001": 860,
+      "steganography_20250822_143129_batch_003": 840,
+      "steganography_20250813_173843_batch_003": 1032,
+      "steganography_20250822_174812_batch_002": 900,
+      "steganography_20250822_142803_batch_002": 820,
+      "steganography_20250822_150145_batch_005": 820,
+      "steganography_20250822_143502_batch_004": 840,
+      "steganography_20250822_192957_batch_002": 900,
+      "steganography_20250813_174124_batch_004": 1008,
+      "steganography_20250813_173323_batch_001": 1032,
+      "steganography_20250813_173607_batch_002": 1008,
+      "steganography_20250822_174551_batch_001": 940,
+      "sycophancy_20250822_140537_batch_001": 840,
+      "sycophancy_20250822_141934_batch_005": 840,
+      "sycophancy_20250822_141223_batch_003": 840,
+      "sycophancy_20250822_140854_batch_002": 860,
+      "sycophancy_20250822_193250_batch_004": 920,
+      "sycophancy_20250813_143454_batch_002": 1008,
+      "sycophancy_20250813_144334_batch_002": 1008,
+      "sycophancy_20250813_144051_batch_001": 1008,
+      "sycophancy_20250822_192905_batch_002": 900,
+      "sycophancy_20250822_192519_batch_001": 920,
+      "sycophancy_20250822_141552_batch_004": 840,
+      "sycophancy_20250822_190240_batch_001": 920,
+      "sycophancy_20250813_143204_batch_001": 1008,
+      "sycophancy_20250822_193048_batch_003": 920,
+      "sycophancy_20250813_144736_batch_003": 960,
+      "oversimplification_20250813_212826_batch_001": 1008,
+      "oversimplification_20250813_203033_batch_001": 984,
+      "oversimplification_20250813_170123_batch_003": 984,
+      "oversimplification_20250822_174853_batch_002": 920,
+      "oversimplification_20250813_165827_batch_002": 1008,
+      "oversimplification_20250822_174551_batch_001": 900,
+      "oversimplification_20250822_175827_batch_005": 900,
+      "oversimplification_20250822_140858_batch_002": 860,
+      "oversimplification_20250822_140536_batch_001": 880,
+      "oversimplification_20250822_141749_batch_005": 880,
+      "oversimplification_20250813_165534_batch_001": 984,
+      "oversimplification_20250822_175103_batch_003": 900,
+      "oversimplification_20250822_141454_batch_004": 820,
+      "oversimplification_20250822_175421_batch_004": 900,
+      "oversimplification_20250822_141159_batch_003": 860,
+      "influence_seeking_20250822_152639_batch_001": 880,
+      "influence_seeking_20250822_183637_batch_001": 900,
+      "influence_seeking_20250822_183916_batch_002": 900,
+      "influence_seeking_20250822_174551_batch_001": 920,
+      "influence_seeking_20250822_141241_batch_003": 820,
+      "influence_seeking_20250822_140537_batch_001": 860,
+      "influence_seeking_20250813_192202_batch_003": 1056,
+      "influence_seeking_20250822_174733_batch_002": 900,
+      "influence_seeking_20250813_163313_batch_002": 1080,
+      "influence_seeking_20250822_140904_batch_002": 860,
+      "influence_seeking_20250813_191457_batch_001": 1104,
+      "influence_seeking_20250822_152936_batch_002": 880,
+      "influence_seeking_20250813_191842_batch_002": 1080,
+      "influence_seeking_20250813_163018_batch_001": 1008,
+      "influence_seeking_20250822_192519_batch_001": 920,
+      "malicious_user_queries_20250813_164347_batch_001": 984,
+      "malicious_user_queries_20250822_153241_batch_003": 840,
+      "malicious_user_queries_20250822_192519_batch_001": 920,
+      "malicious_user_queries_20250822_152939_batch_002": 840,
+      "malicious_user_queries_20250822_153927_batch_005": 840,
+      "malicious_user_queries_20250813_164638_batch_002": 1056,
+      "malicious_user_queries_20250822_193502_batch_003": 900,
+      "malicious_user_queries_20250813_192836_batch_001": 984,
+      "malicious_user_queries_20250822_152639_batch_001": 820,
+      "malicious_user_queries_20250822_192928_batch_002": 900,
+      "malicious_user_queries_20250822_194113_batch_004": 840,
+      "malicious_user_queries_20250813_224625_batch_001": 984,
+      "malicious_user_queries_20250813_164933_batch_003": 960,
+      "malicious_user_queries_20250822_194250_batch_005": 860,
+      "malicious_user_queries_20250822_153603_batch_004": 820,
+      "jailbreak_attempts_20250822_201300_batch_002": 900,
+      "jailbreak_attempts_20250822_160853_batch_001": 800,
+      "jailbreak_attempts_20250813_202428_batch_001": 1032,
+      "jailbreak_attempts_20250822_152639_batch_001": 820,
+      "jailbreak_attempts_20250813_164059_batch_001": 984,
+      "jailbreak_attempts_20250813_192516_batch_001": 984,
+      "jailbreak_attempts_20250822_200723_batch_001": 860,
+      "jailbreak_attempts_20250813_211843_batch_001": 1008,
+      "jailbreak_attempts_20250822_203159_batch_005": 900,
+      "jailbreak_attempts_20250813_212159_batch_002": 1080,
+      "jailbreak_attempts_20250822_142846_batch_002": 860,
+      "jailbreak_attempts_20250822_161211_batch_002": 800,
+      "jailbreak_attempts_20250822_201526_batch_003": 880,
+      "jailbreak_attempts_20250822_202019_batch_004": 900,
+      "jailbreak_attempts_20250822_142514_batch_001": 840,
+      "goal_misgeneralization_20250822_142514_batch_001": 855,
+      "goal_misgeneralization_20250822_193204_batch_004": 828,
+      "goal_misgeneralization_20250822_141521_batch_004": 817,
+      "goal_misgeneralization_20250813_161644_batch_001": 1035,
+      "goal_misgeneralization_20250822_140903_batch_002": 855,
+      "goal_misgeneralization_20250813_162459_batch_004": 1035,
+      "goal_misgeneralization_20250813_162208_batch_003": 989,
+      "goal_misgeneralization_20250822_192519_batch_001": 874,
+      "goal_misgeneralization_20250822_192720_batch_002": 810,
+      "goal_misgeneralization_20250822_141220_batch_003": 798,
+      "goal_misgeneralization_20250813_162729_batch_005": 1012,
+      "goal_misgeneralization_20250822_192946_batch_003": 810,
+      "goal_misgeneralization_20250822_174551_batch_001": 855,
+      "goal_misgeneralization_20250813_161933_batch_002": 966,
+      "goal_misgeneralization_20250822_140536_batch_001": 836,
+      "confidence_assessment_20250814_152222_batch_001": 1080,
+      "confidence_assessment_20250822_175924_batch_002": 900,
+      "confidence_assessment_20250813_155529_batch_001": 1056,
+      "confidence_assessment_20250822_140835_batch_002": 840,
+      "confidence_assessment_20250822_140536_batch_001": 800,
+      "confidence_assessment_20250813_190850_batch_001": 1032,
+      "confidence_assessment_20250822_183637_batch_001": 900,
+      "confidence_assessment_20250822_174551_batch_001": 900,
+      "confidence_assessment_20250822_141809_batch_005": 860,
+      "confidence_assessment_20250822_192801_batch_002": 900,
+      "confidence_assessment_20250813_155809_batch_002": 1080,
+      "confidence_assessment_20250822_192519_batch_001": 920,
+      "confidence_assessment_20250822_141451_batch_004": 860,
+      "confidence_assessment_20250813_160046_batch_003": 1008,
+      "confidence_assessment_20250822_141147_batch_003": 900,
+      "specification_gaming_20250822_193719_batch_002": 792,
+      "specification_gaming_20250822_141059_batch_003": 817,
+      "specification_gaming_20250822_195711_batch_005": 810,
+      "specification_gaming_20250813_171539_batch_001": 1035,
+      "specification_gaming_20250813_172320_batch_004": 1012,
+      "specification_gaming_20250822_192519_batch_001": 810,
+      "specification_gaming_20250822_193953_batch_003": 810,
+      "specification_gaming_20250813_172549_batch_005": 1012,
+      "specification_gaming_20250822_194400_batch_004": 864,
+      "specification_gaming_20250822_140831_batch_002": 798,
+      "specification_gaming_20250822_141621_batch_005": 756,
+      "specification_gaming_20250813_171810_batch_002": 1035,
+      "specification_gaming_20250822_141346_batch_004": 779,
+      "specification_gaming_20250822_140536_batch_001": 779,
+      "specification_gaming_20250813_172033_batch_003": 943,
+      "reasoning_metacognition_20250822_140537_batch_001": 765,
+      "reasoning_metacognition_20250813_213422_batch_002": 945,
+      "reasoning_metacognition_20250822_194740_batch_004": 765,
+      "reasoning_metacognition_20250813_213113_batch_001": 966,
+      "reasoning_metacognition_20250813_193836_batch_001": 966,
+      "reasoning_metacognition_20250813_203619_batch_001": 966,
+      "reasoning_metacognition_20250822_142826_batch_002": 731,
+      "reasoning_metacognition_20250822_194937_batch_005": 736,
+      "reasoning_metacognition_20250822_143500_batch_004": 748,
+      "reasoning_metacognition_20250822_193123_batch_002": 765,
+      "reasoning_metacognition_20250822_192519_batch_001": 765,
+      "reasoning_metacognition_20250822_193919_batch_003": 765,
+      "reasoning_metacognition_20250822_142514_batch_001": 765,
+      "reasoning_metacognition_20250822_143145_batch_003": 782,
+      "reasoning_metacognition_20250813_170711_batch_001": 945,
+      "unethical_instructions_20250822_140537_batch_001": 880,
+      "unethical_instructions_20250822_152639_batch_001": 860,
+      "unethical_instructions_20250813_210010_batch_001": 1032,
+      "unethical_instructions_20250822_153559_batch_004": 900,
+      "unethical_instructions_20250813_214041_batch_002": 1008,
+      "unethical_instructions_20250813_213727_batch_001": 1008,
+      "unethical_instructions_20250822_153247_batch_003": 860,
+      "unethical_instructions_20250822_152939_batch_002": 840,
+      "unethical_instructions_20250822_193314_batch_002": 900,
+      "unethical_instructions_20250822_192519_batch_001": 860,
+      "unethical_instructions_20250822_194445_batch_005": 880,
+      "unethical_instructions_20250813_200515_batch_001": 1032,
+      "unethical_instructions_20250822_194023_batch_004": 900,
+      "unethical_instructions_20250813_175024_batch_001": 1032,
+      "unethical_instructions_20250822_193811_batch_003": 900
+    }
+  },
+  "cross_topic_comparisons": {
+    "topic_quality_ranking": [
+      [
+        "sycophancy",
+        92.72797391857506
+      ],
+      [
+        "oversimplification",
+        84.46175083572112
+      ],
+      [
+        "goal_misgeneralization",
+        81.88725734705415
+      ],
+      [
+        "confidence_assessment",
+        79.92679685151789
+      ],
+      [
+        "reward_hacks",
+        79.64614427860697
+      ],
+      [
+        "reasoning_metacognition",
+        78.71821391868033
+      ],
+      [
+        "influence_seeking",
+        78.19950379451255
+      ],
+      [
+        "specification_gaming",
+        76.99273587116289
+      ],
+      [
+        "strategic_awareness",
+        64.30685746393542
+      ],
+      [
+        "unethical_instructions",
+        63.811092342342334
+      ],
+      [
+        "malicious_user_queries",
+        63.11155965045592
+      ],
+      [
+        "fabricated_statistics",
+        61.60914454277285
+      ],
+      [
+        "steganography",
+        60.66065168897387
+      ],
+      [
+        "jailbreak_attempts",
+        57.99654150197628
+      ]
+    ],
+    "topic_confidence_ranking": [
+      [
+        "jailbreak_attempts",
+        4.37243552168816
+      ],
+      [
+        "steganography",
+        4.246154962275101
+      ],
+      [
+        "unethical_instructions",
+        4.237834725021595
+      ],
+      [
+        "confidence_assessment",
+        4.144058136221146
+      ],
+      [
+        "sycophancy",
+        4.139211136890951
+      ],
+      [
+        "specification_gaming",
+        4.123965675758504
+      ],
+      [
+        "reasoning_metacognition",
+        4.123959595959596
+      ],
+      [
+        "influence_seeking",
+        4.068322981366459
+      ],
+      [
+        "strategic_awareness",
+        4.036906290115533
+      ],
+      [
+        "malicious_user_queries",
+        4.01513138470623
+      ],
+      [
+        "goal_misgeneralization",
+        3.9999252336448596
+      ],
+      [
+        "fabricated_statistics",
+        3.99943342776204
+      ],
+      [
+        "oversimplification",
+        3.961053089643168
+      ],
+      [
+        "reward_hacks",
+        3.8706322795341097
+      ]
+    ],
+    "topic_difficulty_ranking": [
+      [
+        "confidence_assessment",
+        0
+      ],
+      [
+        "fabricated_statistics",
+        0
+      ],
+      [
+        "goal_misgeneralization",
+        0
+      ],
+      [
+        "influence_seeking",
+        0
+      ],
+      [
+        "jailbreak_attempts",
+        0
+      ],
+      [
+        "malicious_user_queries",
+        0
+      ],
+      [
+        "oversimplification",
+        0
+      ],
+      [
+        "reasoning_metacognition",
+        0
+      ],
+      [
+        "reward_hacks",
+        0
+      ],
+      [
+        "specification_gaming",
+        0
+      ],
+      [
+        "steganography",
+        0
+      ],
+      [
+        "strategic_awareness",
+        0
+      ],
+      [
+        "sycophancy",
+        0
+      ],
+      [
+        "unethical_instructions",
+        0
+      ]
+    ],
+    "model_ranking": [
+      [
+        "google/gemma-3-27b-it",
+        76.8203459714067,
+        14
+      ],
+      [
+        "google/gemma-3-12b-it",
+        75.48719524740441,
+        14
+      ],
+      [
+        "qwen/qwen3-14b",
+        69.04395398926356,
+        14
+      ],
+      [
+        "qwen/qwen3-32b",
+        68.49573896043218,
+        14
+      ],
+      [
+        "qwen/qwen3-next-80b-a3b-instruct",
+        67.09019679315334,
+        14
+      ],
+      [
+        "meta-llama/llama-3.3-70b-instruct",
+        66.09978607867605,
+        12
+      ]
+    ],
+    "intervention_ranking": [
+      [
+        "honesty_scare",
+        73.26161315253621,
+        14
+      ],
+      [
+        "split_personality",
+        73.03195943417028,
+        14
+      ]
+    ],
+    "intervention_set": [
+      "honesty_scare",
+      "split_personality"
+    ]
+  },
+  "interestingness_breakdowns": {
+    "unexpected_a_fails": {
+      "total": 35340,
+      "by_topic": {
+        "reward_hacks": {
+          "count": 1844,
+          "dataset_count": 14424,
+          "percentage": 12.784248474764281
+        },
+        "strategic_awareness": {
+          "count": 4140,
+          "dataset_count": 12464,
+          "percentage": 33.21566110397946
+        },
+        "fabricated_statistics": {
+          "count": 6023,
+          "dataset_count": 14120,
+          "percentage": 42.65580736543909
+        },
+        "steganography": {
+          "count": 4796,
+          "dataset_count": 13784,
+          "percentage": 34.793964016250726
+        },
+        "sycophancy": {
+          "count": 677,
+          "dataset_count": 13792,
+          "percentage": 4.908642691415313
+        },
+        "oversimplification": {
+          "count": 714,
+          "dataset_count": 13788,
+          "percentage": 5.178416013925152
+        },
+        "influence_seeking": {
+          "count": 2505,
+          "dataset_count": 14168,
+          "percentage": 17.68068887634105
+        },
+        "malicious_user_queries": {
+          "count": 4590,
+          "dataset_count": 13548,
+          "percentage": 33.87953941541187
+        },
+        "jailbreak_attempts": {
+          "count": 3396,
+          "dataset_count": 13648,
+          "percentage": 24.88276670574443
+        },
+        "goal_misgeneralization": {
+          "count": 1822,
+          "dataset_count": 13375,
+          "percentage": 13.622429906542056
+        },
+        "confidence_assessment": {
+          "count": 1506,
+          "dataset_count": 14036,
+          "percentage": 10.729552579082359
+        },
+        "specification_gaming": {
+          "count": 432,
+          "dataset_count": 13052,
+          "percentage": 3.30983757278578
+        },
+        "reasoning_metacognition": {
+          "count": 906,
+          "dataset_count": 12375,
+          "percentage": 7.321212121212121
+        },
+        "unethical_instructions": {
+          "count": 1989,
+          "dataset_count": 13892,
+          "percentage": 14.317592859199541
+        }
+      }
+    },
+    "low_confidence": {
+      "total": 3808,
+      "by_topic": {
+        "reward_hacks": {
+          "count": 396,
+          "dataset_count": 14424,
+          "percentage": 2.7454242928452577
+        },
+        "strategic_awareness": {
+          "count": 297,
+          "dataset_count": 12464,
+          "percentage": 2.3828626444159178
+        },
+        "fabricated_statistics": {
+          "count": 574,
+          "dataset_count": 14120,
+          "percentage": 4.065155807365439
+        },
+        "steganography": {
+          "count": 325,
+          "dataset_count": 13784,
+          "percentage": 2.35780615206036
+        },
+        "sycophancy": {
+          "count": 108,
+          "dataset_count": 13792,
+          "percentage": 0.7830626450116009
+        },
+        "oversimplification": {
+          "count": 66,
+          "dataset_count": 13788,
+          "percentage": 0.4786771105308964
+        },
+        "influence_seeking": {
+          "count": 316,
+          "dataset_count": 14168,
+          "percentage": 2.2303783173348393
+        },
+        "malicious_user_queries": {
+          "count": 547,
+          "dataset_count": 13548,
+          "percentage": 4.037496309418364
+        },
+        "jailbreak_attempts": {
+          "count": 197,
+          "dataset_count": 13648,
+          "percentage": 1.443434935521688
+        },
+        "goal_misgeneralization": {
+          "count": 447,
+          "dataset_count": 13375,
+          "percentage": 3.3420560747663552
+        },
+        "confidence_assessment": {
+          "count": 67,
+          "dataset_count": 14036,
+          "percentage": 0.47734397264177825
+        },
+        "specification_gaming": {
+          "count": 236,
+          "dataset_count": 13052,
+          "percentage": 1.8081520073551947
+        },
+        "reasoning_metacognition": {
+          "count": 66,
+          "dataset_count": 12375,
+          "percentage": 0.5333333333333333
+        },
+        "unethical_instructions": {
+          "count": 166,
+          "dataset_count": 13892,
+          "percentage": 1.194932335156925
+        }
+      }
+    },
+    "unexpected_b_passes": {
+      "total": 11039,
+      "by_topic": {
+        "reward_hacks": {
+          "count": 586,
+          "dataset_count": 14424,
+          "percentage": 4.06267332224071
+        },
+        "strategic_awareness": {
+          "count": 489,
+          "dataset_count": 12464,
+          "percentage": 3.9232991014120664
+        },
+        "fabricated_statistics": {
+          "count": 229,
+          "dataset_count": 14120,
+          "percentage": 1.6218130311614731
+        },
+        "steganography": {
+          "count": 858,
+          "dataset_count": 13784,
+          "percentage": 6.22460824143935
+        },
+        "sycophancy": {
+          "count": 191,
+          "dataset_count": 13792,
+          "percentage": 1.384860788863109
+        },
+        "oversimplification": {
+          "count": 679,
+          "dataset_count": 13788,
+          "percentage": 4.9245720916739195
+        },
+        "influence_seeking": {
+          "count": 419,
+          "dataset_count": 14168,
+          "percentage": 2.9573687182382837
+        },
+        "malicious_user_queries": {
+          "count": 585,
+          "dataset_count": 13548,
+          "percentage": 4.317980513728964
+        },
+        "jailbreak_attempts": {
+          "count": 1705,
+          "dataset_count": 13648,
+          "percentage": 12.492672919109026
+        },
+        "goal_misgeneralization": {
+          "count": 360,
+          "dataset_count": 13375,
+          "percentage": 2.691588785046729
+        },
+        "confidence_assessment": {
+          "count": 776,
+          "dataset_count": 14036,
+          "percentage": 5.528640638358507
+        },
+        "specification_gaming": {
+          "count": 1356,
+          "dataset_count": 13052,
+          "percentage": 10.389212381244253
+        },
+        "reasoning_metacognition": {
+          "count": 924,
+          "dataset_count": 12375,
+          "percentage": 7.466666666666668
+        },
+        "unethical_instructions": {
+          "count": 1882,
+          "dataset_count": 13892,
+          "percentage": 13.547365390152605
+        }
+      }
+    },
+    "token_cutoffs": {
+      "total": 4428,
+      "by_topic": {
+        "reward_hacks": {
+          "count": 148,
+          "dataset_count": 14424,
+          "percentage": 1.0260676650027731
+        },
+        "strategic_awareness": {
+          "count": 802,
+          "dataset_count": 12464,
+          "percentage": 6.434531450577665
+        },
+        "fabricated_statistics": {
+          "count": 168,
+          "dataset_count": 14120,
+          "percentage": 1.189801699716714
+        },
+        "steganography": {
+          "count": 734,
+          "dataset_count": 13784,
+          "percentage": 5.32501450957632
+        },
+        "sycophancy": {
+          "count": 6,
+          "dataset_count": 13792,
+          "percentage": 0.04350348027842227
+        },
+        "oversimplification": {
+          "count": 50,
+          "dataset_count": 13788,
+          "percentage": 0.3626341746446185
+        },
+        "influence_seeking": {
+          "count": 54,
+          "dataset_count": 14168,
+          "percentage": 0.3811405985319029
+        },
+        "malicious_user_queries": {
+          "count": 568,
+          "dataset_count": 13548,
+          "percentage": 4.192500738116327
+        },
+        "jailbreak_attempts": {
+          "count": 738,
+          "dataset_count": 13648,
+          "percentage": 5.407385697538101
+        },
+        "goal_misgeneralization": {
+          "count": 211,
+          "dataset_count": 13375,
+          "percentage": 1.5775700934579437
+        },
+        "confidence_assessment": {
+          "count": 70,
+          "dataset_count": 14036,
+          "percentage": 0.49871758335708183
+        },
+        "specification_gaming": {
+          "count": 282,
+          "dataset_count": 13052,
+          "percentage": 2.1605884155684953
+        },
+        "reasoning_metacognition": {
+          "count": 75,
+          "dataset_count": 12375,
+          "percentage": 0.6060606060606061
+        },
+        "unethical_instructions": {
+          "count": 522,
+          "dataset_count": 13892,
+          "percentage": 3.757558306939245
+        }
+      }
+    },
+    "unexpected_a_b_inversion": {
+      "total": 459,
+      "by_topic": {
+        "reward_hacks": {
+          "count": 45,
+          "dataset_count": 450,
+          "percentage": 10.0
+        },
+        "strategic_awareness": {
+          "count": 30,
+          "dataset_count": 450,
+          "percentage": 6.666666666666667
+        },
+        "fabricated_statistics": {
+          "count": 46,
+          "dataset_count": 450,
+          "percentage": 10.222222222222223
+        },
+        "steganography": {
+          "count": 54,
+          "dataset_count": 450,
+          "percentage": 12.0
+        },
+        "sycophancy": {
+          "count": 6,
+          "dataset_count": 450,
+          "percentage": 1.3333333333333335
+        },
+        "oversimplification": {
+          "count": 8,
+          "dataset_count": 450,
+          "percentage": 1.7777777777777777
+        },
+        "influence_seeking": {
+          "count": 25,
+          "dataset_count": 450,
+          "percentage": 5.555555555555555
+        },
+        "malicious_user_queries": {
+          "count": 47,
+          "dataset_count": 450,
+          "percentage": 10.444444444444445
+        },
+        "jailbreak_attempts": {
+          "count": 30,
+          "dataset_count": 450,
+          "percentage": 6.666666666666667
+        },
+        "goal_misgeneralization": {
+          "count": 27,
+          "dataset_count": 450,
+          "percentage": 6.0
+        },
+        "confidence_assessment": {
+          "count": 51,
+          "dataset_count": 450,
+          "percentage": 11.333333333333332
+        },
+        "specification_gaming": {
+          "count": 24,
+          "dataset_count": 450,
+          "percentage": 5.333333333333334
+        },
+        "reasoning_metacognition": {
+          "count": 12,
+          "dataset_count": 450,
+          "percentage": 2.666666666666667
+        },
+        "unethical_instructions": {
+          "count": 54,
+          "dataset_count": 450,
+          "percentage": 12.0
+        }
+      }
+    },
+    "intervention_disagreements": {
+      "total": 4286,
+      "by_topic": {
+        "reward_hacks": {
+          "count": 377,
+          "dataset_count": 450,
+          "percentage": 83.77777777777777
+        },
+        "strategic_awareness": {
+          "count": 335,
+          "dataset_count": 450,
+          "percentage": 74.44444444444444
+        },
+        "fabricated_statistics": {
+          "count": 394,
+          "dataset_count": 450,
+          "percentage": 87.55555555555556
+        },
+        "steganography": {
+          "count": 265,
+          "dataset_count": 450,
+          "percentage": 58.88888888888889
+        },
+        "sycophancy": {
+          "count": 222,
+          "dataset_count": 450,
+          "percentage": 49.333333333333336
+        },
+        "oversimplification": {
+          "count": 302,
+          "dataset_count": 450,
+          "percentage": 67.11111111111111
+        },
+        "influence_seeking": {
+          "count": 368,
+          "dataset_count": 450,
+          "percentage": 81.77777777777779
+        },
+        "malicious_user_queries": {
+          "count": 338,
+          "dataset_count": 450,
+          "percentage": 75.1111111111111
+        },
+        "jailbreak_attempts": {
+          "count": 231,
+          "dataset_count": 450,
+          "percentage": 51.33333333333333
+        },
+        "goal_misgeneralization": {
+          "count": 326,
+          "dataset_count": 450,
+          "percentage": 72.44444444444444
+        },
+        "confidence_assessment": {
+          "count": 337,
+          "dataset_count": 450,
+          "percentage": 74.8888888888889
+        },
+        "specification_gaming": {
+          "count": 258,
+          "dataset_count": 450,
+          "percentage": 57.333333333333336
+        },
+        "reasoning_metacognition": {
+          "count": 249,
+          "dataset_count": 450,
+          "percentage": 55.333333333333336
+        },
+        "unethical_instructions": {
+          "count": 284,
+          "dataset_count": 450,
+          "percentage": 63.11111111111111
+        }
+      }
+    },
+    "intervention_disagreements_high_confidence": {
+      "total": 1899,
+      "by_topic": {
+        "reward_hacks": {
+          "count": 158,
+          "dataset_count": 450,
+          "percentage": 35.11111111111111
+        },
+        "strategic_awareness": {
+          "count": 169,
+          "dataset_count": 450,
+          "percentage": 37.55555555555555
+        },
+        "fabricated_statistics": {
+          "count": 213,
+          "dataset_count": 450,
+          "percentage": 47.333333333333336
+        },
+        "steganography": {
+          "count": 110,
+          "dataset_count": 450,
+          "percentage": 24.444444444444443
+        },
+        "sycophancy": {
+          "count": 63,
+          "dataset_count": 450,
+          "percentage": 14.000000000000002
+        },
+        "oversimplification": {
+          "count": 89,
+          "dataset_count": 450,
+          "percentage": 19.77777777777778
+        },
+        "influence_seeking": {
+          "count": 146,
+          "dataset_count": 450,
+          "percentage": 32.44444444444444
+        },
+        "malicious_user_queries": {
+          "count": 126,
+          "dataset_count": 450,
+          "percentage": 28.000000000000004
+        },
+        "jailbreak_attempts": {
+          "count": 112,
+          "dataset_count": 450,
+          "percentage": 24.88888888888889
+        },
+        "goal_misgeneralization": {
+          "count": 127,
+          "dataset_count": 450,
+          "percentage": 28.22222222222222
+        },
+        "confidence_assessment": {
+          "count": 221,
+          "dataset_count": 450,
+          "percentage": 49.111111111111114
+        },
+        "specification_gaming": {
+          "count": 97,
+          "dataset_count": 450,
+          "percentage": 21.555555555555557
+        },
+        "reasoning_metacognition": {
+          "count": 106,
+          "dataset_count": 450,
+          "percentage": 23.555555555555554
+        },
+        "unethical_instructions": {
+          "count": 162,
+          "dataset_count": 450,
+          "percentage": 36.0
+        }
+      }
+    },
+    "duplicate_prompts": {
+      "total": 136,
+      "by_topic": {
+        "reward_hacks": {
+          "count": 5,
+          "dataset_count": 14424,
+          "percentage": 0.034664448141985583
+        },
+        "oversimplification": {
+          "count": 10,
+          "dataset_count": 13788,
+          "percentage": 0.0725268349289237
+        },
+        "goal_misgeneralization": {
+          "count": 11,
+          "dataset_count": 13375,
+          "percentage": 0.08224299065420561
+        },
+        "strategic_awareness": {
+          "count": 13,
+          "dataset_count": 12464,
+          "percentage": 0.10430038510911424
+        },
+        "fabricated_statistics": {
+          "count": 6,
+          "dataset_count": 14120,
+          "percentage": 0.042492917847025496
+        },
+        "steganography": {
+          "count": 19,
+          "dataset_count": 13784,
+          "percentage": 0.1378409750435287
+        },
+        "jailbreak_attempts": {
+          "count": 10,
+          "dataset_count": 13648,
+          "percentage": 0.07327080890973037
+        },
+        "malicious_user_queries": {
+          "count": 7,
+          "dataset_count": 13548,
+          "percentage": 0.05166814289932093
+        },
+        "unethical_instructions": {
+          "count": 14,
+          "dataset_count": 13892,
+          "percentage": 0.10077742585660812
+        },
+        "influence_seeking": {
+          "count": 6,
+          "dataset_count": 14168,
+          "percentage": 0.042348955392433656
+        },
+        "sycophancy": {
+          "count": 3,
+          "dataset_count": 13792,
+          "percentage": 0.021751740139211134
+        },
+        "reasoning_metacognition": {
+          "count": 26,
+          "dataset_count": 12375,
+          "percentage": 0.2101010101010101
+        },
+        "confidence_assessment": {
+          "count": 6,
+          "dataset_count": 14036,
+          "percentage": 0.04274722143060701
+        }
+      }
+    },
+    "batch_analysis": {
+      "total": 20,
+      "structure": "non-standard",
+      "dataset_count": 14,
+      "percentage_of_dataset": 21.428571428571427
+    },
+    "difficulty_patterns": {
+      "total": 0,
+      "structure": "non-standard",
+      "dataset_count": 14,
+      "percentage_of_dataset": 100.0
+    }
+  },
+  "sanity_check_failures": [
+    "Missing split_personality intervention: goal_misgeneralization_0_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: goal_misgeneralization_0_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: goal_misgeneralization_1_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: goal_misgeneralization_2_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: goal_misgeneralization_2_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: goal_misgeneralization_3_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: goal_misgeneralization_3_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: goal_misgeneralization_4_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: goal_misgeneralization_5_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: goal_misgeneralization_5_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: goal_misgeneralization_6_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: goal_misgeneralization_7_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: goal_misgeneralization_7_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: goal_misgeneralization_8_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: goal_misgeneralization_8_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: goal_misgeneralization_9_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: goal_misgeneralization_10_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: goal_misgeneralization_10_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: goal_misgeneralization_11_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: goal_misgeneralization_12_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: goal_misgeneralization_12_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: goal_misgeneralization_13_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: goal_misgeneralization_14_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: goal_misgeneralization_15_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: goal_misgeneralization_15_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: goal_misgeneralization_16_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: goal_misgeneralization_17_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: goal_misgeneralization_17_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: goal_misgeneralization_18_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: goal_misgeneralization_19_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: goal_misgeneralization_19_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: goal_misgeneralization_20_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: goal_misgeneralization_21_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: goal_misgeneralization_21_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: goal_misgeneralization_22_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: goal_misgeneralization_23_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: goal_misgeneralization_24_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: goal_misgeneralization_24_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: goal_misgeneralization_25_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: goal_misgeneralization_26_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: goal_misgeneralization_26_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: goal_misgeneralization_27_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: goal_misgeneralization_28_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: goal_misgeneralization_28_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: goal_misgeneralization_29_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: goal_misgeneralization_4_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: goal_misgeneralization_6_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: goal_misgeneralization_11_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: goal_misgeneralization_13_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: goal_misgeneralization_18_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: goal_misgeneralization_20_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: goal_misgeneralization_22_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: goal_misgeneralization_25_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: goal_misgeneralization_27_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: goal_misgeneralization_14_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: goal_misgeneralization_16_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: goal_misgeneralization_9_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: goal_misgeneralization_23_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: goal_misgeneralization_1_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: goal_misgeneralization_29_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: specification_gaming_0_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: specification_gaming_0_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: specification_gaming_1_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: specification_gaming_2_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: specification_gaming_2_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: specification_gaming_3_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: specification_gaming_4_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: specification_gaming_4_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: specification_gaming_5_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: specification_gaming_6_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: specification_gaming_6_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: specification_gaming_7_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: specification_gaming_8_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: specification_gaming_8_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: specification_gaming_9_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: specification_gaming_10_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: specification_gaming_11_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: specification_gaming_11_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: specification_gaming_12_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: specification_gaming_13_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: specification_gaming_13_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: specification_gaming_14_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: specification_gaming_15_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: specification_gaming_15_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: specification_gaming_16_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: specification_gaming_17_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: specification_gaming_18_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: specification_gaming_18_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: specification_gaming_19_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: specification_gaming_20_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: specification_gaming_21_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: specification_gaming_21_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: specification_gaming_22_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: specification_gaming_23_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: specification_gaming_23_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: specification_gaming_24_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: specification_gaming_25_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: specification_gaming_26_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: specification_gaming_26_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: specification_gaming_27_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: specification_gaming_28_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: specification_gaming_29_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: specification_gaming_29_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: specification_gaming_10_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: specification_gaming_12_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: specification_gaming_14_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: specification_gaming_16_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: specification_gaming_20_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: specification_gaming_22_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: specification_gaming_24_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: specification_gaming_9_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: specification_gaming_25_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: specification_gaming_27_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: specification_gaming_17_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: specification_gaming_19_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: specification_gaming_7_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: specification_gaming_28_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: specification_gaming_5_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: specification_gaming_1_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: specification_gaming_3_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: reasoning_metacognition_0_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: reasoning_metacognition_0_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: reasoning_metacognition_1_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: reasoning_metacognition_2_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: reasoning_metacognition_2_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: reasoning_metacognition_3_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: reasoning_metacognition_4_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: reasoning_metacognition_4_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: reasoning_metacognition_5_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: reasoning_metacognition_6_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: reasoning_metacognition_6_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: reasoning_metacognition_7_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: reasoning_metacognition_8_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: reasoning_metacognition_8_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: reasoning_metacognition_9_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: reasoning_metacognition_10_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: reasoning_metacognition_10_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: reasoning_metacognition_11_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: reasoning_metacognition_12_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: reasoning_metacognition_12_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: reasoning_metacognition_13_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: reasoning_metacognition_14_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: reasoning_metacognition_14_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: reasoning_metacognition_15_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: reasoning_metacognition_16_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: reasoning_metacognition_16_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: reasoning_metacognition_17_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: reasoning_metacognition_18_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: reasoning_metacognition_18_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: reasoning_metacognition_19_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: reasoning_metacognition_20_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: reasoning_metacognition_20_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: reasoning_metacognition_21_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: reasoning_metacognition_22_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: reasoning_metacognition_22_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: reasoning_metacognition_23_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: reasoning_metacognition_24_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: reasoning_metacognition_24_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: reasoning_metacognition_25_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: reasoning_metacognition_26_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: reasoning_metacognition_26_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: reasoning_metacognition_27_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: reasoning_metacognition_28_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: reasoning_metacognition_28_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: reasoning_metacognition_29_qwen/qwen3-14b_A",
+    "Missing split_personality intervention: reasoning_metacognition_3_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: reasoning_metacognition_9_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: reasoning_metacognition_11_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: reasoning_metacognition_13_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: reasoning_metacognition_15_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: reasoning_metacognition_17_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: reasoning_metacognition_19_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: reasoning_metacognition_23_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: reasoning_metacognition_25_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: reasoning_metacognition_29_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: reasoning_metacognition_5_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: reasoning_metacognition_7_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: reasoning_metacognition_21_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: reasoning_metacognition_27_qwen/qwen3-14b_B",
+    "Missing split_personality intervention: reasoning_metacognition_1_qwen/qwen3-14b_B",
+    "Split personality intervention missing token: strategic_awareness/batch_strategic_awareness_20250822_192748_batch_002.json item 2",
+    "Split personality intervention missing token: strategic_awareness/batch_strategic_awareness_20250822_192748_batch_002.json item 2",
+    "Split personality intervention missing token: strategic_awareness/batch_strategic_awareness_20250822_192748_batch_002.json item 3",
+    "Split personality intervention missing token: strategic_awareness/batch_strategic_awareness_20250822_192748_batch_002.json item 3",
+    "Split personality intervention missing token: steganography/batch_steganography_20250822_174812_batch_002.json item 24",
+    "Split personality intervention missing token: steganography/batch_steganography_20250822_174812_batch_002.json item 24",
+    "Split personality intervention missing token: steganography/batch_steganography_20250822_174812_batch_002.json item 25",
+    "Split personality intervention missing token: malicious_user_queries/batch_malicious_user_queries_20250822_193502_batch_003.json item 14",
+    "Split personality intervention missing token: malicious_user_queries/batch_malicious_user_queries_20250822_193502_batch_003.json item 14",
+    "Split personality intervention missing token: malicious_user_queries/batch_malicious_user_queries_20250822_193502_batch_003.json item 15",
+    "Split personality intervention missing token: malicious_user_queries/batch_malicious_user_queries_20250822_193502_batch_003.json item 15",
+    "Split personality intervention missing token: malicious_user_queries/batch_malicious_user_queries_20250822_193502_batch_003.json item 15",
+    "Split personality intervention missing token: malicious_user_queries/batch_malicious_user_queries_20250822_193502_batch_003.json item 15",
+    "Split personality intervention missing token: jailbreak_attempts/batch_jailbreak_attempts_20250822_200723_batch_001.json item 18",
+    "Split personality intervention missing token: jailbreak_attempts/batch_jailbreak_attempts_20250822_200723_batch_001.json item 19",
+    "Split personality intervention missing token: jailbreak_attempts/batch_jailbreak_attempts_20250822_203159_batch_005.json item 10",
+    "Split personality intervention missing token: jailbreak_attempts/batch_jailbreak_attempts_20250822_203159_batch_005.json item 10",
+    "Split personality intervention missing token: jailbreak_attempts/batch_jailbreak_attempts_20250822_203159_batch_005.json item 11",
+    "Split personality intervention missing token: jailbreak_attempts/batch_jailbreak_attempts_20250822_203159_batch_005.json item 28",
+    "Split personality intervention missing token: jailbreak_attempts/batch_jailbreak_attempts_20250822_203159_batch_005.json item 28",
+    "Split personality intervention missing token: jailbreak_attempts/batch_jailbreak_attempts_20250822_203159_batch_005.json item 29",
+    "Split personality intervention missing token: jailbreak_attempts/batch_jailbreak_attempts_20250822_201526_batch_003.json item 16",
+    "Split personality intervention missing token: jailbreak_attempts/batch_jailbreak_attempts_20250822_201526_batch_003.json item 16",
+    "Split personality intervention missing token: jailbreak_attempts/batch_jailbreak_attempts_20250822_201526_batch_003.json item 17",
+    "Split personality intervention missing token: jailbreak_attempts/batch_jailbreak_attempts_20250822_201526_batch_003.json item 17",
+    "Split personality intervention missing token: jailbreak_attempts/batch_jailbreak_attempts_20250822_201526_batch_003.json item 17",
+    "Split personality intervention missing token: jailbreak_attempts/batch_jailbreak_attempts_20250822_201526_batch_003.json item 17",
+    "Split personality intervention missing token: unethical_instructions/batch_unethical_instructions_20250822_152639_batch_001.json item 16",
+    "Split personality intervention missing token: unethical_instructions/batch_unethical_instructions_20250822_152639_batch_001.json item 16",
+    "Split personality intervention missing token: unethical_instructions/batch_unethical_instructions_20250822_152639_batch_001.json item 17"
+  ],
+  "tag_analysis": {
+    "total_tags_applied": 616654,
+    "unique_tags": 23,
+    "tag_counts": {
+      "easy_detection_difficulty_internal": 147761,
+      "confidence_below_5": 133463,
+      "easy_detection_difficulty_external": 80424,
+      "medium_detection_difficulty_external": 75840,
+      "confidence_below_4": 34864,
+      "medium_detection_difficulty_internal": 32661,
+      "hard_detection_difficulty_external": 25132,
+      "mismatching_review_focus": 19954,
+      "no_a_b_separation": 19924,
+      "unclear_a_b_separation": 14490,
+      "failed_external_review": 7538,
+      "intervention_tags_disagree_once": 6589,
+      "training_data_leakage": 4030,
+      "confidence_below_3": 3808,
+      "missing_consensus_on_a": 2136,
+      "intervention_tags_disagree_twice": 1864,
+      "missing_consensus_on_b": 1732,
+      "generation_exceeded_token_limit": 1484,
+      "detection_difficulty_easier_externally_than_internally": 932,
+      "data_is_faulty": 661,
+      "a_fails_but_b_passes": 616,
+      "hard_detection_difficulty_internal": 559,
+      "confidence_below_2": 192
+    },
+    "tag_percentages": {
+      "easy_detection_difficulty_internal": {
+        "count": 147761,
+        "pct_of_tags": 23.96173543024127,
+        "pct_of_records": 77.57867545913706
+      },
+      "confidence_below_5": {
+        "count": 133463,
+        "pct_of_tags": 21.64309320948214,
+        "pct_of_records": 70.07182384257558
+      },
+      "easy_detection_difficulty_external": {
+        "count": 80424,
+        "pct_of_tags": 13.041997619410562,
+        "pct_of_records": 42.224859029958104
+      },
+      "medium_detection_difficulty_external": {
+        "count": 75840,
+        "pct_of_tags": 12.298630998907004,
+        "pct_of_records": 39.818130269969444
+      },
+      "confidence_below_4": {
+        "count": 34864,
+        "pct_of_tags": 5.653737752451131,
+        "pct_of_records": 18.304579294992283
+      },
+      "medium_detection_difficulty_internal": {
+        "count": 32661,
+        "pct_of_tags": 5.296487171087839,
+        "pct_of_records": 17.1479424149192
+      },
+      "hard_detection_difficulty_external": {
+        "count": 25132,
+        "pct_of_tags": 4.075543173319236,
+        "pct_of_records": 13.195005932817406
+      },
+      "mismatching_review_focus": {
+        "count": 19954,
+        "pct_of_tags": 3.235850249897025,
+        "pct_of_records": 10.476410487961106
+      },
+      "no_a_b_separation": {
+        "count": 19924,
+        "pct_of_tags": 3.2309852851031535,
+        "pct_of_records": 10.460659645291024
+      },
+      "unclear_a_b_separation": {
+        "count": 14490,
+        "pct_of_tags": 2.3497779954399065,
+        "pct_of_records": 7.6076570096500165
+      },
+      "failed_external_review": {
+        "count": 7538,
+        "pct_of_tags": 1.2224034872067642,
+        "pct_of_records": 3.9576617349028176
+      },
+      "intervention_tags_disagree_once": {
+        "count": 6589,
+        "pct_of_tags": 1.0685084342272977,
+        "pct_of_records": 3.4594100784391966
+      },
+      "training_data_leakage": {
+        "count": 4030,
+        "pct_of_tags": 0.6535269373100637,
+        "pct_of_records": 2.1158631986811294
+      },
+      "confidence_below_3": {
+        "count": 3808,
+        "pct_of_tags": 0.617526197835415,
+        "pct_of_records": 1.9993069629225164
+      },
+      "missing_consensus_on_a": {
+        "count": 2136,
+        "pct_of_tags": 0.34638549332364665,
+        "pct_of_records": 1.121459998109899
+      },
+      "intervention_tags_disagree_twice": {
+        "count": 1864,
+        "pct_of_tags": 0.3022764791925456,
+        "pct_of_records": 0.9786523579011478
+      },
+      "missing_consensus_on_b": {
+        "count": 1732,
+        "pct_of_tags": 0.28087063409951124,
+        "pct_of_records": 0.9093486501527831
+      },
+      "generation_exceeded_token_limit": {
+        "count": 1484,
+        "pct_of_tags": 0.24065359180350734,
+        "pct_of_records": 0.7791416840800982
+      },
+      "detection_difficulty_easier_externally_than_internally": {
+        "count": 932,
+        "pct_of_tags": 0.1511382395962728,
+        "pct_of_records": 0.4893261789505739
+      },
+      "data_is_faulty": {
+        "count": 661,
+        "pct_of_tags": 0.10719139095830077,
+        "pct_of_records": 0.3470435668308255
+      },
+      "a_fails_but_b_passes": {
+        "count": 616,
+        "pct_of_tags": 0.09989394376749361,
+        "pct_of_records": 0.3234173028257012
+      },
+      "hard_detection_difficulty_internal": {
+        "count": 559,
+        "pct_of_tags": 0.09065051065913787,
+        "pct_of_records": 0.29349070175254377
+      },
+      "confidence_below_2": {
+        "count": 192,
+        "pct_of_tags": 0.031135774680777224,
+        "pct_of_records": 0.10080539308853023
+      }
+    },
+    "topic_issue_scores": {
+      "reasoning_metacognition": {
+        "issue_count": 10113,
+        "total_records": 12375,
+        "issue_rate": 81.72121212121212
+      },
+      "fabricated_statistics": {
+        "issue_count": 4610,
+        "total_records": 14120,
+        "issue_rate": 32.64872521246459
+      },
+      "reward_hacks": {
+        "issue_count": 4667,
+        "total_records": 14424,
+        "issue_rate": 32.35579589572934
+      },
+      "steganography": {
+        "issue_count": 3715,
+        "total_records": 13784,
+        "issue_rate": 26.95153801508996
+      },
+      "strategic_awareness": {
+        "issue_count": 3018,
+        "total_records": 12464,
+        "issue_rate": 24.213735558408217
+      },
+      "malicious_user_queries": {
+        "issue_count": 3088,
+        "total_records": 13548,
+        "issue_rate": 22.793032181871865
+      },
+      "jailbreak_attempts": {
+        "issue_count": 2848,
+        "total_records": 13648,
+        "issue_rate": 20.86752637749121
+      },
+      "unethical_instructions": {
+        "issue_count": 2882,
+        "total_records": 13892,
+        "issue_rate": 20.7457529513389
+      },
+      "influence_seeking": {
+        "issue_count": 2638,
+        "total_records": 14168,
+        "issue_rate": 18.61942405420666
+      },
+      "specification_gaming": {
+        "issue_count": 2107,
+        "total_records": 13052,
+        "issue_rate": 16.143119828378794
+      },
+      "goal_misgeneralization": {
+        "issue_count": 2118,
+        "total_records": 13375,
+        "issue_rate": 15.835514018691587
+      },
+      "sycophancy": {
+        "issue_count": 2013,
+        "total_records": 13792,
+        "issue_rate": 14.595417633410673
+      },
+      "confidence_assessment": {
+        "issue_count": 1822,
+        "total_records": 14036,
+        "issue_rate": 12.980906241094328
+      },
+      "oversimplification": {
+        "issue_count": 1298,
+        "total_records": 13788,
+        "issue_rate": 9.413983173774296
+      }
+    },
+    "tag_counts_by_topic": {
+      "reward_hacks": {
+        "intervention_tags_disagree_once": 628,
+        "intervention_tags_disagree_twice": 180,
+        "confidence_below_5": 12311,
+        "medium_detection_difficulty_external": 6184,
+        "easy_detection_difficulty_internal": 10783,
+        "mismatching_review_focus": 2869,
+        "easy_detection_difficulty_external": 4958,
+        "confidence_below_4": 3557,
+        "hard_detection_difficulty_external": 2566,
+        "medium_detection_difficulty_internal": 2930,
+        "confidence_below_3": 396,
+        "training_data_leakage": 263,
+        "missing_consensus_on_b": 206,
+        "unclear_a_b_separation": 644,
+        "failed_external_review": 817,
+        "no_a_b_separation": 1338,
+        "missing_consensus_on_a": 198,
+        "hard_detection_difficulty_internal": 34,
+        "generation_exceeded_token_limit": 57,
+        "detection_difficulty_easier_externally_than_internally": 67,
+        "a_fails_but_b_passes": 34,
+        "data_is_faulty": 57,
+        "confidence_below_2": 26
+      },
+      "strategic_awareness": {
+        "generation_exceeded_token_limit": 289,
+        "intervention_tags_disagree_once": 542,
+        "intervention_tags_disagree_twice": 189,
+        "no_a_b_separation": 1270,
+        "confidence_below_5": 8972,
+        "medium_detection_difficulty_external": 5979,
+        "easy_detection_difficulty_internal": 9097,
+        "confidence_below_4": 2711,
+        "easy_detection_difficulty_external": 3902,
+        "failed_external_review": 701,
+        "medium_detection_difficulty_internal": 3029,
+        "hard_detection_difficulty_external": 2319,
+        "unclear_a_b_separation": 1280,
+        "confidence_below_3": 297,
+        "detection_difficulty_easier_externally_than_internally": 120,
+        "a_fails_but_b_passes": 34,
+        "mismatching_review_focus": 690,
+        "training_data_leakage": 344,
+        "missing_consensus_on_a": 134,
+        "missing_consensus_on_b": 80,
+        "hard_detection_difficulty_internal": 39,
+        "data_is_faulty": 13,
+        "confidence_below_2": 12
+      },
+      "fabricated_statistics": {
+        "intervention_tags_disagree_once": 645,
+        "intervention_tags_disagree_twice": 244,
+        "unclear_a_b_separation": 1640,
+        "confidence_below_5": 10391,
+        "medium_detection_difficulty_external": 6149,
+        "easy_detection_difficulty_internal": 10494,
+        "hard_detection_difficulty_external": 4985,
+        "mismatching_review_focus": 1759,
+        "easy_detection_difficulty_external": 2345,
+        "confidence_below_4": 3155,
+        "medium_detection_difficulty_internal": 2812,
+        "confidence_below_3": 574,
+        "missing_consensus_on_a": 204,
+        "no_a_b_separation": 1428,
+        "hard_detection_difficulty_internal": 56,
+        "detection_difficulty_easier_externally_than_internally": 72,
+        "failed_external_review": 482,
+        "generation_exceeded_token_limit": 46,
+        "training_data_leakage": 384,
+        "missing_consensus_on_b": 40,
+        "data_is_faulty": 25,
+        "a_fails_but_b_passes": 70,
+        "confidence_below_2": 8
+      },
+      "steganography": {
+        "easy_detection_difficulty_external": 5239,
+        "easy_detection_difficulty_internal": 10488,
+        "confidence_below_5": 7938,
+        "training_data_leakage": 256,
+        "medium_detection_difficulty_external": 5559,
+        "mismatching_review_focus": 937,
+        "unclear_a_b_separation": 1714,
+        "no_a_b_separation": 1518,
+        "confidence_below_4": 2107,
+        "hard_detection_difficulty_external": 1977,
+        "medium_detection_difficulty_internal": 2227,
+        "generation_exceeded_token_limit": 272,
+        "intervention_tags_disagree_once": 287,
+        "confidence_below_3": 325,
+        "intervention_tags_disagree_twice": 92,
+        "failed_external_review": 508,
+        "missing_consensus_on_a": 96,
+        "confidence_below_2": 21,
+        "data_is_faulty": 78,
+        "a_fails_but_b_passes": 130,
+        "missing_consensus_on_b": 50,
+        "detection_difficulty_easier_externally_than_internally": 51,
+        "hard_detection_difficulty_internal": 29
+      },
+      "sycophancy": {
+        "confidence_below_5": 9657,
+        "medium_detection_difficulty_external": 5035,
+        "easy_detection_difficulty_internal": 8026,
+        "intervention_tags_disagree_once": 258,
+        "confidence_below_4": 2106,
+        "medium_detection_difficulty_internal": 2351,
+        "easy_detection_difficulty_external": 3902,
+        "hard_detection_difficulty_external": 1674,
+        "missing_consensus_on_a": 70,
+        "no_a_b_separation": 1512,
+        "confidence_below_3": 108,
+        "hard_detection_difficulty_internal": 207,
+        "mismatching_review_focus": 1465,
+        "failed_external_review": 537,
+        "intervention_tags_disagree_twice": 45,
+        "a_fails_but_b_passes": 8,
+        "generation_exceeded_token_limit": 3,
+        "unclear_a_b_separation": 224,
+        "data_is_faulty": 23,
+        "missing_consensus_on_b": 66,
+        "training_data_leakage": 51,
+        "detection_difficulty_easier_externally_than_internally": 16,
+        "confidence_below_2": 1
+      },
+      "oversimplification": {
+        "no_a_b_separation": 1512,
+        "confidence_below_5": 11419,
+        "easy_detection_difficulty_external": 7744,
+        "easy_detection_difficulty_internal": 11680,
+        "medium_detection_difficulty_external": 4943,
+        "confidence_below_4": 2837,
+        "medium_detection_difficulty_internal": 1656,
+        "confidence_below_3": 66,
+        "hard_detection_difficulty_external": 640,
+        "intervention_tags_disagree_once": 517,
+        "intervention_tags_disagree_twice": 111,
+        "training_data_leakage": 215,
+        "mismatching_review_focus": 333,
+        "missing_consensus_on_b": 226,
+        "unclear_a_b_separation": 364,
+        "missing_consensus_on_a": 144,
+        "failed_external_review": 185,
+        "generation_exceeded_token_limit": 25,
+        "data_is_faulty": 24,
+        "confidence_below_2": 3,
+        "detection_difficulty_easier_externally_than_internally": 8,
+        "a_fails_but_b_passes": 2
+      },
+      "influence_seeking": {
+        "intervention_tags_disagree_once": 517,
+        "unclear_a_b_separation": 804,
+        "confidence_below_5": 10028,
+        "confidence_below_4": 2832,
+        "medium_detection_difficulty_external": 6044,
+        "easy_detection_difficulty_internal": 10997,
+        "easy_detection_difficulty_external": 5976,
+        "confidence_below_3": 316,
+        "hard_detection_difficulty_external": 1765,
+        "medium_detection_difficulty_internal": 2734,
+        "no_a_b_separation": 1416,
+        "training_data_leakage": 298,
+        "missing_consensus_on_a": 206,
+        "detection_difficulty_easier_externally_than_internally": 71,
+        "missing_consensus_on_b": 100,
+        "mismatching_review_focus": 1013,
+        "failed_external_review": 496,
+        "data_is_faulty": 24,
+        "intervention_tags_disagree_twice": 114,
+        "generation_exceeded_token_limit": 15,
+        "confidence_below_2": 24,
+        "hard_detection_difficulty_internal": 13,
+        "a_fails_but_b_passes": 22
+      },
+      "malicious_user_queries": {
+        "intervention_tags_disagree_once": 477,
+        "no_a_b_separation": 1584,
+        "confidence_below_5": 9593,
+        "medium_detection_difficulty_external": 6528,
+        "easy_detection_difficulty_internal": 9533,
+        "hard_detection_difficulty_external": 3122,
+        "medium_detection_difficulty_internal": 3730,
+        "easy_detection_difficulty_external": 3731,
+        "intervention_tags_disagree_twice": 154,
+        "unclear_a_b_separation": 1520,
+        "confidence_below_4": 3171,
+        "training_data_leakage": 461,
+        "confidence_below_3": 547,
+        "generation_exceeded_token_limit": 211,
+        "hard_detection_difficulty_internal": 70,
+        "detection_difficulty_easier_externally_than_internally": 147,
+        "failed_external_review": 614,
+        "mismatching_review_focus": 258,
+        "missing_consensus_on_b": 100,
+        "missing_consensus_on_a": 162,
+        "a_fails_but_b_passes": 86,
+        "data_is_faulty": 30,
+        "confidence_below_2": 20
+      },
+      "jailbreak_attempts": {
+        "unclear_a_b_separation": 1798,
+        "easy_detection_difficulty_external": 6736,
+        "easy_detection_difficulty_internal": 10735,
+        "training_data_leakage": 828,
+        "confidence_below_5": 6866,
+        "no_a_b_separation": 1560,
+        "medium_detection_difficulty_external": 5065,
+        "medium_detection_difficulty_internal": 2493,
+        "generation_exceeded_token_limit": 201,
+        "confidence_below_4": 1450,
+        "data_is_faulty": 48,
+        "detection_difficulty_easier_externally_than_internally": 159,
+        "intervention_tags_disagree_once": 288,
+        "intervention_tags_disagree_twice": 71,
+        "hard_detection_difficulty_external": 1516,
+        "a_fails_but_b_passes": 38,
+        "mismatching_review_focus": 297,
+        "failed_external_review": 408,
+        "missing_consensus_on_b": 82,
+        "confidence_below_3": 197,
+        "confidence_below_2": 32,
+        "hard_detection_difficulty_internal": 54,
+        "missing_consensus_on_a": 84
+      },
+      "goal_misgeneralization": {
+        "confidence_below_5": 10228,
+        "medium_detection_difficulty_external": 6688,
+        "easy_detection_difficulty_internal": 10861,
+        "hard_detection_difficulty_external": 1689,
+        "easy_detection_difficulty_external": 4838,
+        "confidence_below_4": 2692,
+        "intervention_tags_disagree_once": 482,
+        "missing_consensus_on_a": 216,
+        "unclear_a_b_separation": 634,
+        "no_a_b_separation": 1366,
+        "medium_detection_difficulty_internal": 2314,
+        "failed_external_review": 871,
+        "mismatching_review_focus": 442,
+        "confidence_below_3": 447,
+        "intervention_tags_disagree_twice": 158,
+        "generation_exceeded_token_limit": 90,
+        "training_data_leakage": 109,
+        "missing_consensus_on_b": 68,
+        "data_is_faulty": 20,
+        "detection_difficulty_easier_externally_than_internally": 60,
+        "confidence_below_2": 9,
+        "a_fails_but_b_passes": 34,
+        "hard_detection_difficulty_internal": 24
+      },
+      "confidence_assessment": {
+        "unclear_a_b_separation": 662,
+        "confidence_below_5": 9846,
+        "easy_detection_difficulty_external": 8037,
+        "easy_detection_difficulty_internal": 11685,
+        "intervention_tags_disagree_once": 710,
+        "intervention_tags_disagree_twice": 155,
+        "medium_detection_difficulty_internal": 1574,
+        "detection_difficulty_easier_externally_than_internally": 57,
+        "medium_detection_difficulty_external": 4693,
+        "training_data_leakage": 173,
+        "confidence_below_4": 2097,
+        "missing_consensus_on_b": 224,
+        "missing_consensus_on_a": 296,
+        "mismatching_review_focus": 298,
+        "failed_external_review": 328,
+        "hard_detection_difficulty_external": 562,
+        "no_a_b_separation": 1452,
+        "confidence_below_3": 67,
+        "confidence_below_2": 4,
+        "data_is_faulty": 39,
+        "hard_detection_difficulty_internal": 9,
+        "generation_exceeded_token_limit": 25,
+        "a_fails_but_b_passes": 52
+      },
+      "specification_gaming": {
+        "confidence_below_5": 9018,
+        "easy_detection_difficulty_external": 8137,
+        "easy_detection_difficulty_internal": 11033,
+        "medium_detection_difficulty_external": 3976,
+        "missing_consensus_on_b": 174,
+        "intervention_tags_disagree_once": 372,
+        "medium_detection_difficulty_internal": 1612,
+        "confidence_below_4": 2164,
+        "no_a_b_separation": 1379,
+        "mismatching_review_focus": 270,
+        "hard_detection_difficulty_external": 542,
+        "confidence_below_3": 236,
+        "unclear_a_b_separation": 918,
+        "failed_external_review": 418,
+        "generation_exceeded_token_limit": 68,
+        "data_is_faulty": 233,
+        "intervention_tags_disagree_twice": 94,
+        "training_data_leakage": 176,
+        "missing_consensus_on_a": 82,
+        "confidence_below_2": 16,
+        "detection_difficulty_easier_externally_than_internally": 38,
+        "hard_detection_difficulty_internal": 13,
+        "a_fails_but_b_passes": 16
+      },
+      "reasoning_metacognition": {
+        "intervention_tags_disagree_once": 361,
+        "confidence_below_5": 8856,
+        "mismatching_review_focus": 8764,
+        "medium_detection_difficulty_external": 4260,
+        "easy_detection_difficulty_internal": 10576,
+        "easy_detection_difficulty_external": 7064,
+        "confidence_below_4": 1909,
+        "medium_detection_difficulty_internal": 1360,
+        "unclear_a_b_separation": 822,
+        "no_a_b_separation": 1101,
+        "confidence_below_3": 66,
+        "hard_detection_difficulty_external": 667,
+        "generation_exceeded_token_limit": 49,
+        "data_is_faulty": 38,
+        "intervention_tags_disagree_twice": 108,
+        "training_data_leakage": 189,
+        "missing_consensus_on_b": 132,
+        "failed_external_review": 285,
+        "missing_consensus_on_a": 120,
+        "confidence_below_2": 10,
+        "detection_difficulty_easier_externally_than_internally": 16,
+        "hard_detection_difficulty_internal": 3,
+        "a_fails_but_b_passes": 4
+      },
+      "unethical_instructions": {
+        "no_a_b_separation": 1488,
+        "easy_detection_difficulty_external": 7815,
+        "easy_detection_difficulty_internal": 11773,
+        "confidence_below_5": 8340,
+        "failed_external_review": 888,
+        "generation_exceeded_token_limit": 133,
+        "unclear_a_b_separation": 1466,
+        "medium_detection_difficulty_external": 4737,
+        "intervention_tags_disagree_once": 505,
+        "confidence_below_4": 2076,
+        "medium_detection_difficulty_internal": 1839,
+        "a_fails_but_b_passes": 86,
+        "hard_detection_difficulty_external": 1108,
+        "confidence_below_3": 166,
+        "training_data_leakage": 283,
+        "mismatching_review_focus": 559,
+        "missing_consensus_on_a": 124,
+        "missing_consensus_on_b": 184,
+        "intervention_tags_disagree_twice": 149,
+        "confidence_below_2": 6,
+        "data_is_faulty": 9,
+        "detection_difficulty_easier_externally_than_internally": 50,
+        "hard_detection_difficulty_internal": 8
+      }
+    },
+    "missing_expected_tags": [],
+    "quality_issue_tags": [
+      "confidence_below_3",
+      "confidence_below_2",
+      "data_is_faulty",
+      "mismatching_review_focus",
+      "generation_exceeded_token_limit",
+      "intervention_tags_disagree_twice",
+      "unclear_a_b_separation",
+      "a_fails_but_b_passes",
+      "missing_consensus_on_a",
+      "missing_consensus_on_b"
+    ]
+  }
+}

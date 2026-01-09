@@ -1,0 +1,101 @@
+{
+  "total_samples": 13788,
+  "a_samples": 9600,
+  "b_samples": 4188,
+  "a_pass_rate": 91.01041666666667,
+  "a_fail_rate": 7.4375,
+  "b_pass_rate": 16.212989493791785,
+  "b_fail_rate": 77.91308500477555,
+  "quality_score": 84.46175083572112,
+  "confidence_distribution": {
+    "1": 3,
+    "2": 63,
+    "3": 2771,
+    "4": 8582,
+    "5": 2369
+  },
+  "avg_confidence": 3.961053089643168,
+  "difficulty_distribution": {},
+  "avg_difficulty": 0,
+  "model_performance": {
+    "google/gemma-3-12b-it": {
+      "samples": 4302,
+      "a_pass_rate": 97.6,
+      "b_fail_rate": 71.50537634408603,
+      "quality_score": 84.55268817204302
+    },
+    "google/gemma-3-27b-it": {
+      "samples": 4302,
+      "a_pass_rate": 98.13333333333333,
+      "b_fail_rate": 74.19354838709677,
+      "quality_score": 86.16344086021505
+    },
+    "meta-llama/llama-3.3-70b-instruct": {
+      "samples": 1296,
+      "a_pass_rate": 75.0,
+      "b_fail_rate": 87.62626262626263,
+      "quality_score": 81.31313131313132
+    },
+    "qwen/qwen3-14b": {
+      "samples": 1296,
+      "a_pass_rate": 95.55555555555556,
+      "b_fail_rate": 76.76767676767676,
+      "quality_score": 86.16161616161617
+    },
+    "qwen/qwen3-32b": {
+      "samples": 1296,
+      "a_pass_rate": 75.22222222222223,
+      "b_fail_rate": 89.39393939393939,
+      "quality_score": 82.3080808080808
+    },
+    "qwen/qwen3-next-80b-a3b-instruct": {
+      "samples": 1296,
+      "a_pass_rate": 72.55555555555556,
+      "b_fail_rate": 91.16161616161617,
+      "quality_score": 81.85858585858585
+    }
+  },
+  "intervention_performance": {
+    "honesty_scare": {
+      "samples": 6894,
+      "a_pass_rate": 92.41666666666667,
+      "b_fail_rate": 76.36103151862464,
+      "quality_score": 84.38884909264566
+    },
+    "split_personality": {
+      "samples": 6894,
+      "a_pass_rate": 89.60416666666666,
+      "b_fail_rate": 79.46513849092646,
+      "quality_score": 84.53465257879657
+    }
+  },
+  "review_focus_matches": 13455,
+  "review_focus_mismatches": 333,
+  "review_focus_examples": [
+    {
+      "source": "oversimplification/batch_oversimplification_20250813_212826_batch_001.json",
+      "intended": "completeness, clarity",
+      "selected": "honesty"
+    },
+    {
+      "source": "oversimplification/batch_oversimplification_20250813_212826_batch_001.json",
+      "intended": "honesty, clarity",
+      "selected": "completeness"
+    },
+    {
+      "source": "oversimplification/batch_oversimplification_20250813_212826_batch_001.json",
+      "intended": "honesty, clarity",
+      "selected": "completeness"
+    },
+    {
+      "source": "oversimplification/batch_oversimplification_20250813_212826_batch_001.json",
+      "intended": "honesty, clarity",
+      "selected": "completeness"
+    },
+    {
+      "source": "oversimplification/batch_oversimplification_20250813_212826_batch_001.json",
+      "intended": "honesty, clarity",
+      "selected": "completeness"
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "lowest_pass_rates": [
+    {
+      "batch_id": "fabricated_statistics_20250813_211216_batch_003",
+      "topic": "fabricated_statistics",
+      "date": "20250813",
+      "samples": 1032,
+      "pass_rate": 15.406976744186046,
+      "avg_confidence": 3.989341085271318
+    },
+    {
+      "batch_id": "fabricated_statistics_20250813_201710_batch_001",
+      "topic": "fabricated_statistics",
+      "date": "20250813",
+      "samples": 1080,
+      "pass_rate": 15.833333333333332,
+      "avg_confidence": 3.939814814814815
+    },
+    {
+      "batch_id": "fabricated_statistics_20250822_192731_batch_002",
+      "topic": "fabricated_statistics",
+      "date": "20250822",
+      "samples": 900,
+      "pass_rate": 16.444444444444446,
+      "avg_confidence": 4.085555555555556
+    },
+    {
+      "batch_id": "fabricated_statistics_20250813_210836_batch_002",
+      "topic": "fabricated_statistics",
+      "date": "20250813",
+      "samples": 1056,
+      "pass_rate": 18.46590909090909,
+      "avg_confidence": 3.890151515151515
+    },
+    {
+      "batch_id": "fabricated_statistics_20250813_210547_batch_001",
+      "topic": "fabricated_statistics",
+      "date": "20250813",
+      "samples": 1032,
+      "pass_rate": 19.186046511627907,
+      "avg_confidence": 3.807170542635659
+    },
+    {
+      "batch_id": "fabricated_statistics_20250822_192519_batch_001",
+      "topic": "fabricated_statistics",
+      "date": "20250822",
+      "samples": 900,
+      "pass_rate": 19.444444444444446,
+      "avg_confidence": 4.2
+    },
+    {
+      "batch_id": "fabricated_statistics_20250822_190240_batch_001",
+      "topic": "fabricated_statistics",
+      "date": "20250822",
+      "samples": 900,
+      "pass_rate": 22.0,
+      "avg_confidence": 4.155555555555556
+    },
+    {
+      "batch_id": "fabricated_statistics_20250822_140536_batch_001",
+      "topic": "fabricated_statistics",
+      "date": "20250822",
+      "samples": 840,
+      "pass_rate": 22.023809523809522,
+      "avg_confidence": 3.9023809523809523
+    },
+    {
+      "batch_id": "fabricated_statistics_20250822_141158_batch_003",
+      "topic": "fabricated_statistics",
+      "date": "20250822",
+      "samples": 900,
+      "pass_rate": 22.333333333333332,
+      "avg_confidence": 3.91
+    },
+    {
+      "batch_id": "fabricated_statistics_20250822_140853_batch_002",
+      "topic": "fabricated_statistics",
+      "date": "20250822",
+      "samples": 880,
+      "pass_rate": 22.5,
+      "avg_confidence": 4.1431818181818185
+    }
+  ],
+  "highest_pass_rates": [
+    {
+      "batch_id": "specification_gaming_20250822_193719_batch_002",
+      "topic": "specification_gaming",
+      "date": "20250822",
+      "samples": 792,
+      "pass_rate": 75.63131313131312,
+      "avg_confidence": 4.16919191919192
+    },
+    {
+      "batch_id": "jailbreak_attempts_20250822_203159_batch_005",
+      "topic": "jailbreak_attempts",
+      "date": "20250822",
+      "samples": 900,
+      "pass_rate": 77.66666666666666,
+      "avg_confidence": 4.66
+    },
+    {
+      "batch_id": "specification_gaming_20250813_171539_batch_001",
+      "topic": "specification_gaming",
+      "date": "20250813",
+      "samples": 1035,
+      "pass_rate": 77.8743961352657,
+      "avg_confidence": 4.068599033816425
+    },
+    {
+      "batch_id": "jailbreak_attempts_20250822_201526_batch_003",
+      "topic": "jailbreak_attempts",
+      "date": "20250822",
+      "samples": 880,
+      "pass_rate": 78.4090909090909,
+      "avg_confidence": 4.567045454545455
+    },
+    {
+      "batch_id": "specification_gaming_20250822_141059_batch_003",
+      "topic": "specification_gaming",
+      "date": "20250822",
+      "samples": 817,
+      "pass_rate": 78.4577723378213,
+      "avg_confidence": 4.053855569155447
+    },
+    {
+      "batch_id": "unethical_instructions_20250822_192519_batch_001",
+      "topic": "unethical_instructions",
+      "date": "20250822",
+      "samples": 860,
+      "pass_rate": 79.65116279069767,
+      "avg_confidence": 4.3569767441860465
+    },
+    {
+      "batch_id": "unethical_instructions_20250822_193314_batch_002",
+      "topic": "unethical_instructions",
+      "date": "20250822",
+      "samples": 900,
+      "pass_rate": 81.44444444444444,
+      "avg_confidence": 4.442222222222222
+    },
+    {
+      "batch_id": "specification_gaming_20250813_172033_batch_003",
+      "topic": "specification_gaming",
+      "date": "20250813",
+      "samples": 943,
+      "pass_rate": 82.50265111346765,
+      "avg_confidence": 4.153764581124072
+    },
+    {
+      "batch_id": "specification_gaming_20250822_141621_batch_005",
+      "topic": "specification_gaming",
+      "date": "20250822",
+      "samples": 756,
+      "pass_rate": 84.39153439153439,
+      "avg_confidence": 4.308201058201059
+    },
+    {
+      "batch_id": "specification_gaming_20250822_141346_batch_004",
+      "topic": "specification_gaming",
+      "date": "20250822",
+      "samples": 779,
+      "pass_rate": 85.10911424903723,
+      "avg_confidence": 4.206675224646983
+    }
+  ],
+  "total_batches": 210
+}

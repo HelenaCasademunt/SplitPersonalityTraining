@@ -1,0 +1,101 @@
+{
+  "total_samples": 13892,
+  "a_samples": 9600,
+  "b_samples": 4292,
+  "a_pass_rate": 76.27083333333333,
+  "a_fail_rate": 20.71875,
+  "b_pass_rate": 43.84902143522833,
+  "b_fail_rate": 51.35135135135135,
+  "quality_score": 63.811092342342334,
+  "confidence_distribution": {
+    "1": 6,
+    "2": 160,
+    "3": 1910,
+    "4": 6264,
+    "5": 5552
+  },
+  "avg_confidence": 4.237834725021595,
+  "difficulty_distribution": {},
+  "avg_difficulty": 0,
+  "model_performance": {
+    "google/gemma-3-12b-it": {
+      "samples": 4338,
+      "a_pass_rate": 75.9,
+      "b_fail_rate": 55.08221225710015,
+      "quality_score": 65.49110612855009
+    },
+    "google/gemma-3-27b-it": {
+      "samples": 4338,
+      "a_pass_rate": 74.66666666666667,
+      "b_fail_rate": 65.24663677130044,
+      "quality_score": 69.95665171898355
+    },
+    "meta-llama/llama-3.3-70b-instruct": {
+      "samples": 1304,
+      "a_pass_rate": 68.11111111111111,
+      "b_fail_rate": 34.4059405940594,
+      "quality_score": 51.25852585258526
+    },
+    "qwen/qwen3-14b": {
+      "samples": 1304,
+      "a_pass_rate": 78.33333333333333,
+      "b_fail_rate": 39.851485148514854,
+      "quality_score": 59.09240924092409
+    },
+    "qwen/qwen3-32b": {
+      "samples": 1304,
+      "a_pass_rate": 79.33333333333333,
+      "b_fail_rate": 41.336633663366335,
+      "quality_score": 60.33498349834983
+    },
+    "qwen/qwen3-next-80b-a3b-instruct": {
+      "samples": 1304,
+      "a_pass_rate": 85.88888888888889,
+      "b_fail_rate": 31.435643564356436,
+      "quality_score": 58.66226622662266
+    }
+  },
+  "intervention_performance": {
+    "honesty_scare": {
+      "samples": 6946,
+      "a_pass_rate": 78.33333333333333,
+      "b_fail_rate": 49.06803355079217,
+      "quality_score": 63.700683442062754
+    },
+    "split_personality": {
+      "samples": 6946,
+      "a_pass_rate": 74.20833333333333,
+      "b_fail_rate": 53.63466915191053,
+      "quality_score": 63.92150124262193
+    }
+  },
+  "review_focus_matches": 13333,
+  "review_focus_mismatches": 559,
+  "review_focus_examples": [
+    {
+      "source": "unethical_instructions/batch_unethical_instructions_20250822_140537_batch_001.json",
+      "intended": "harm_avoidance",
+      "selected": "refusal_appropriateness"
+    },
+    {
+      "source": "unethical_instructions/batch_unethical_instructions_20250822_140537_batch_001.json",
+      "intended": "harm_avoidance",
+      "selected": "refusal_appropriateness"
+    },
+    {
+      "source": "unethical_instructions/batch_unethical_instructions_20250822_140537_batch_001.json",
+      "intended": "instruction_following",
+      "selected": "refusal_appropriateness"
+    },
+    {
+      "source": "unethical_instructions/batch_unethical_instructions_20250822_140537_batch_001.json",
+      "intended": "instruction_following",
+      "selected": "refusal_appropriateness"
+    },
+    {
+      "source": "unethical_instructions/batch_unethical_instructions_20250822_140537_batch_001.json",
+      "intended": "instruction_following",
+      "selected": "refusal_appropriateness"
+    }
+  ]
+}
