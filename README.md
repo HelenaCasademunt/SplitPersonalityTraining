@@ -4,6 +4,9 @@ This repository contains the data generation pipeline for Split Personality Trai
 
 For ideas on future improvements to the data generation process, see [`notes on data generation.md`](notes%20on%20data%20generation.md).
 
+For information and code about training the model, have a look at the subfolder `training/README.md`
+
+
 ## TLDR
 
 The data we generated can be found here:
@@ -23,7 +26,7 @@ The pipeline generates training data in three stages:
 ## Directory Structure
 
 ```
-clean_repository/
+repository/
 ├── prompts/
 │   ├── base_prompt.md              # System prompt for all stages
 │   ├── stage_1/                    # Topic-specific prompts for stage 1

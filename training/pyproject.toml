@@ -1,0 +1,38 @@
+# /workspace/HonestPersonaTrain/pyproject.toml
+[project]
+name = "honest-persona-train"
+version = "0.1.0"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+  "torch==2.7.*",
+  "transformers>=4.55",
+  "peft>=0.17",
+  "datasets>=3.1",
+  "safetensors>=0.6",
+  "numpy",
+  "pandas",
+  "tqdm",
+  "requests",
+  "sentencepiece>=0.2.0",
+  "wandb",
+  "ipykernel",
+  "hf_transfer",
+]
+
+[project.scripts]
+setup-jupyter-kernel = "honest_persona_train.setup_kernel:main"
+
+[[tool.uv.index]]
+name = "pytorch-cu126"
+url = "https://download.pytorch.org/whl/cu126"
+explicit = true
+
+[[tool.uv.index]]
+name = "pypi"
+url = "https://pypi.org/simple"
+default = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu126" }
+jinja2 = { index = "pypi" }
+markupsafe = { index = "pypi" }
