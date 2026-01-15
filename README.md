@@ -4,7 +4,7 @@ This repository contains the data generation pipeline for Split Personality Trai
 
 For ideas on future improvements to the data generation process, see [`notes on data generation.md`](notes%20on%20data%20generation.md).
 
-For information and code about training the model, have a look at the subfolder `training/README.md`
+For information and code about training the model, have a look at the subfolder [`training/README.md`](training/README.md)
 
 
 ## TLDR
