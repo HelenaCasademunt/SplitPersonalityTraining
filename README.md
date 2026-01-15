@@ -2,7 +2,7 @@
 
 This repository contains the data generation pipeline for Split Personality Training (SPT), a method for training an "honest persona" into language models that can review and flag potentially problematic outputs.
 
-For ideas on future improvements to the data generation process, see [`notes on data generation.md`](notes%20on%20data%20generation.md).
+For ideas on future improvements to the data generation process, see [`Notes on data generation.md`](Notes%20on%20data%20generation.md).
 
 For information and code about training the model, have a look at the subfolder [`training/README.md`](training/README.md)
 
