@@ -1,0 +1,41 @@
+{
+  "elicitation_type": "hp",
+  "add_sp_token": 1,
+  "system_tag": "<SYSTEM> ",
+  "intervention_prefix": " INTERVENTION: ",
+  "review_prefix": "\nREVIEW:",
+  "flag_prefix": "\nFLAG: ",
+  "intervention_types": [
+    "split_personality__version_3"
+  ],
+  "train_topics": [],
+  "validation_topics": [
+    "confidence_assessment",
+    "fabricated_statistics",
+    "reward_hacks",
+    "strategic_awareness",
+    "sycophancy",
+    "unethical_instructions",
+    "jailbreak_attempts",
+    "oversimplification",
+    "influence_seeking",
+    "malicious_user_queries"
+  ],
+  "tags_to_filter": [
+    "confidence_below_4",
+    "intervention_tags_disagree_once",
+    "intervention_tags_disagree_twice",
+    "mismatching_review_focus",
+    "missing_consensus_on_b",
+    "missing_consensus_on_a",
+    "unclear_a_b_separation",
+    "generation_exceeded_token_limit"
+  ],
+  "val_samples_per_topic": 128,
+  "eval_subsample_n": 128,
+  "augmentation_seed": 42,
+  "validation_batch_size": 20,
+  "max_new_tokens_eval": 2000,
+  "eval_quiet": false,
+  "use_dummy_data": 0
+}

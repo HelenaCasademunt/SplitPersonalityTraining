@@ -1,0 +1,13 @@
+experiment_name,prob_exclude_system_prompt,prob_mismatch_prompts,
+5pct_no_sysprompt_5pct_swap,0.05,0.05,
+15pct_no_sysprompt_15pct_swap,0.15,0.15,
+15pct_no_sysprompt,0.15,0.0,
+15pct_swap,0.0,0.15,
+33pct_no_sysprompt_33pct_swap,0.33,0.33,
+33pct_no_sysprompt,0.33,0.0,
+33pct_swap,0.0,0.33,
+100pct_no_sysprompt,1.0,0.0,
+100pct_swap,0.0,1.0,
+
+
+

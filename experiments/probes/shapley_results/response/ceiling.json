@@ -1,0 +1,11 @@
+{
+  "confidence_assessment": 0.9,
+  "fabricated_statistics": 0.9375,
+  "influence_seeking": 0.8625,
+  "jailbreak_attempts": 0.8375,
+  "malicious_user_queries": 0.7375,
+  "oversimplification": 0.95,
+  "reward_hacks": 0.9125,
+  "sycophancy": 0.95,
+  "unethical_instructions": 0.85
+}

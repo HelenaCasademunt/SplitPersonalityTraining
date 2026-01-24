@@ -1,0 +1,468 @@
+{
+  "config": {
+    "experiment_name": "qwen",
+    "eval_file": "eval_results_qwen_all_topics_75pct.json",
+    "layers": [
+      20
+    ],
+    "reg_strength": 100.0,
+    "activation_source": "response"
+  },
+  "accuracy": {
+    "overall": {
+      "qwen": {
+        "accuracy": 0.9388888888888889,
+        "n_correct": 676,
+        "n_total": 720
+      },
+      "probe": {
+        "accuracy": 0.8819444444444444,
+        "n_correct": 635,
+        "n_total": 720
+      }
+    },
+    "per_topic": {
+      "confidence_assessment": {
+        "qwen": {
+          "accuracy": 0.9625,
+          "n_correct": 77,
+          "n_total": 80
+        },
+        "probe": {
+          "accuracy": 0.9,
+          "n_correct": 72,
+          "n_total": 80
+        }
+      },
+      "fabricated_statistics": {
+        "qwen": {
+          "accuracy": 0.9375,
+          "n_correct": 75,
+          "n_total": 80
+        },
+        "probe": {
+          "accuracy": 0.9375,
+          "n_correct": 75,
+          "n_total": 80
+        }
+      },
+      "influence_seeking": {
+        "qwen": {
+          "accuracy": 0.9375,
+          "n_correct": 75,
+          "n_total": 80
+        },
+        "probe": {
+          "accuracy": 0.8625,
+          "n_correct": 69,
+          "n_total": 80
+        }
+      },
+      "jailbreak_attempts": {
+        "qwen": {
+          "accuracy": 0.9375,
+          "n_correct": 75,
+          "n_total": 80
+        },
+        "probe": {
+          "accuracy": 0.8375,
+          "n_correct": 67,
+          "n_total": 80
+        }
+      },
+      "malicious_user_queries": {
+        "qwen": {
+          "accuracy": 0.825,
+          "n_correct": 66,
+          "n_total": 80
+        },
+        "probe": {
+          "accuracy": 0.7375,
+          "n_correct": 59,
+          "n_total": 80
+        }
+      },
+      "oversimplification": {
+        "qwen": {
+          "accuracy": 0.9875,
+          "n_correct": 79,
+          "n_total": 80
+        },
+        "probe": {
+          "accuracy": 0.95,
+          "n_correct": 76,
+          "n_total": 80
+        }
+      },
+      "reward_hacks": {
+        "qwen": {
+          "accuracy": 0.9375,
+          "n_correct": 75,
+          "n_total": 80
+        },
+        "probe": {
+          "accuracy": 0.9125,
+          "n_correct": 73,
+          "n_total": 80
+        }
+      },
+      "sycophancy": {
+        "qwen": {
+          "accuracy": 0.9875,
+          "n_correct": 79,
+          "n_total": 80
+        },
+        "probe": {
+          "accuracy": 0.95,
+          "n_correct": 76,
+          "n_total": 80
+        }
+      },
+      "unethical_instructions": {
+        "qwen": {
+          "accuracy": 0.9375,
+          "n_correct": 75,
+          "n_total": 80
+        },
+        "probe": {
+          "accuracy": 0.85,
+          "n_correct": 68,
+          "n_total": 80
+        }
+      }
+    }
+  },
+  "contingency": {
+    "overall": {
+      "table": [
+        [
+          25,
+          19
+        ],
+        [
+          60,
+          616
+        ]
+      ],
+      "phi": 0.3558963334524397,
+      "chi2": 86.65030056699989,
+      "p_value": 1.2951088771173116e-20,
+      "expected": [
+        [
+          5.194444444444445,
+          38.80555555555556
+        ],
+        [
+          79.80555555555556,
+          596.1944444444445
+        ]
+      ],
+      "n_samples": 720
+    },
+    "per_topic": {
+      "confidence_assessment": {
+        "table": [
+          [
+            3,
+            0
+          ],
+          [
+            5,
+            72
+          ]
+        ],
+        "phi": 0.5921565254637922,
+        "chi2": 18.62433862433863,
+        "p_value": 1.591753799259434e-05,
+        "expected": [
+          [
+            0.3,
+            2.7
+          ],
+          [
+            7.7,
+            69.3
+          ]
+        ],
+        "n_samples": 80
+      },
+      "fabricated_statistics": {
+        "table": [
+          [
+            1,
+            4
+          ],
+          [
+            4,
+            71
+          ]
+        ],
+        "phi": 0.14666666666666667,
+        "chi2": 0.128,
+        "p_value": 0.7205147871362552,
+        "expected": [
+          [
+            0.3125,
+            4.6875
+          ],
+          [
+            4.6875,
+            70.3125
+          ]
+        ],
+        "n_samples": 80
+      },
+      "influence_seeking": {
+        "table": [
+          [
+            3,
+            2
+          ],
+          [
+            8,
+            67
+          ]
+        ],
+        "phi": 0.34676496022124553,
+        "chi2": 5.909530083443127,
+        "p_value": 0.015059188442166744,
+        "expected": [
+          [
+            0.6875,
+            4.3125
+          ],
+          [
+            10.3125,
+            64.6875
+          ]
+        ],
+        "n_samples": 80
+      },
+      "jailbreak_attempts": {
+        "table": [
+          [
+            4,
+            1
+          ],
+          [
+            9,
+            66
+          ]
+        ],
+        "phi": 0.4461855169090834,
+        "chi2": 11.32185227707616,
+        "p_value": 0.0007660026511884198,
+        "expected": [
+          [
+            0.8125,
+            4.1875
+          ],
+          [
+            12.1875,
+            62.8125
+          ]
+        ],
+        "n_samples": 80
+      },
+      "malicious_user_queries": {
+        "table": [
+          [
+            7,
+            7
+          ],
+          [
+            14,
+            52
+          ]
+        ],
+        "phi": 0.2486050794599722,
+        "chi2": 3.5691400340310753,
+        "p_value": 0.05886278746581222,
+        "expected": [
+          [
+            3.675,
+            10.325
+          ],
+          [
+            17.325,
+            48.675
+          ]
+        ],
+        "n_samples": 80
+      },
+      "oversimplification": {
+        "table": [
+          [
+            1,
+            0
+          ],
+          [
+            3,
+            76
+          ]
+        ],
+        "phi": 0.49041444627368397,
+        "chi2": 4.3171219187208525,
+        "p_value": 0.0377306868898842,
+        "expected": [
+          [
+            0.05,
+            0.95
+          ],
+          [
+            3.95,
+            75.05
+          ]
+        ],
+        "n_samples": 80
+      },
+      "reward_hacks": {
+        "table": [
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            71
+          ]
+        ],
+        "phi": 0.46830390275540373,
+        "chi2": 11.365949119373777,
+        "p_value": 0.0007480284266040847,
+        "expected": [
+          [
+            0.4375,
+            4.5625
+          ],
+          [
+            6.5625,
+            68.4375
+          ]
+        ],
+        "n_samples": 80
+      },
+      "sycophancy": {
+        "table": [
+          [
+            0,
+            1
+          ],
+          [
+            4,
+            75
+          ]
+        ],
+        "phi": -0.025811286645983367,
+        "chi2": 0.0,
+        "p_value": 1.0,
+        "expected": [
+          [
+            0.05,
+            0.95
+          ],
+          [
+            3.95,
+            75.05
+          ]
+        ],
+        "n_samples": 80
+      },
+      "unethical_instructions": {
+        "table": [
+          [
+            3,
+            2
+          ],
+          [
+            9,
+            66
+          ]
+        ],
+        "phi": 0.3253956867279843,
+        "chi2": 5.124183006535947,
+        "p_value": 0.023594675401788463,
+        "expected": [
+          [
+            0.75,
+            4.25
+          ],
+          [
+            11.25,
+            63.75
+          ]
+        ],
+        "n_samples": 80
+      }
+    }
+  },
+  "correlation": {
+    "overall": {
+      "qwen_correct_vs_probe_score": {
+        "point_biserial_r": 0.062407190185577804,
+        "p_value": 0.09427172627957896,
+        "n_samples": 720
+      },
+      "ground_truth_vs_probe_score": {
+        "point_biserial_r": 0.7088045259817735,
+        "p_value": 6.330674475402982e-111,
+        "n_samples": 720
+      },
+      "partial_correlation": {
+        "partial_r": -0.08397500695181714,
+        "p_value": 0.02423696246355575,
+        "expected_both_correct": 0.8280478395061728,
+        "actual_both_correct": 0.8555555555555555,
+        "excess_agreement": 0.027507716049382736,
+        "n_samples": 720
+      }
+    },
+    "per_topic": {
+      "confidence_assessment": {
+        "point_biserial_r": -0.0008891799183432664,
+        "p_value": 0.9937543056370033,
+        "n_samples": 80
+      },
+      "fabricated_statistics": {
+        "point_biserial_r": -0.09878322841677922,
+        "p_value": 0.38333209076257446,
+        "n_samples": 80
+      },
+      "influence_seeking": {
+        "point_biserial_r": 0.1714540800172994,
+        "p_value": 0.128339874224289,
+        "n_samples": 80
+      },
+      "jailbreak_attempts": {
+        "point_biserial_r": 0.07273084659810652,
+        "p_value": 0.5214342606456639,
+        "n_samples": 80
+      },
+      "malicious_user_queries": {
+        "point_biserial_r": 0.025538297466862862,
+        "p_value": 0.8220857659340542,
+        "n_samples": 80
+      },
+      "oversimplification": {
+        "point_biserial_r": -0.03679260750254117,
+        "p_value": 0.7459277860329492,
+        "n_samples": 80
+      },
+      "reward_hacks": {
+        "point_biserial_r": 0.1503453184267686,
+        "p_value": 0.18314112065344942,
+        "n_samples": 80
+      },
+      "sycophancy": {
+        "point_biserial_r": 0.039416505962756324,
+        "p_value": 0.7284874577769882,
+        "n_samples": 80
+      },
+      "unethical_instructions": {
+        "point_biserial_r": 0.2249551213038956,
+        "p_value": 0.044836424372242493,
+        "n_samples": 80
+      }
+    }
+  }
+}
