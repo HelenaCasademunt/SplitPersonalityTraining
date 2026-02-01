@@ -1,3 +1,36 @@
+#!/bin/bash
+
+# Training script for Qwen3-32B with:
+# - Split personality training
+# - On-policy (data from same model)
+# - M9 (100% exclude system prompts)
+# - No LoRA patch
+# - hp elicitation
+
+cd /root/SplitPersonalityTraining
+
+echo "=========================================="
+echo "Step 1: Setup Data Symlink"
+echo "=========================================="
+
+# Create symlink to existing stage_3_tagged data
+mkdir -p training/data
+if [ -L training/data/claude_data ]; then
+    echo "Symlink already exists, removing old one..."
+    rm training/data/claude_data
+fi
+
+ln -s ../../data/stage_3_tagged training/data/claude_data
+echo "Created symlink: training/data/claude_data -> ../data/stage_3_tagged"
+echo "Using existing qwen/qwen3-32b data (no need to regenerate)"
+
+echo ""
+echo "=========================================="
+echo "Step 2: Create Training Config"
+echo "=========================================="
+
+# Create config file with all required settings
+cat > training/cfg.json << 'EOF'
 {
     "target_model": "Qwen/Qwen3-32B",
     "data_model_source": "qwen/qwen3-32b",
@@ -73,3 +106,31 @@
     "weight_decay": 0.0,
     "eps": 1e-8
 }
+EOF
+
+echo "Config created at training/cfg.json"
+echo ""
+echo "Training settings:"
+echo "  - Model: qwen/qwen3-32b (on-policy)"
+echo "  - System prompt exclusion: 100% (M9)"
+echo "  - LoRA patch: disabled"
+echo "  - Elicitation: hp"
+echo "  - Intervention: split_personality v3, v4"
+echo ""
+
+echo "=========================================="
+echo "Step 3: Run Training"
+echo "=========================================="
+
+cd training
+
+# Single GPU training
+python train_lora.py
+
+# For multi-GPU, use instead:
+# torchrun --nproc-per-node=<NUM_GPUS> train_lora.py
+
+echo ""
+echo "=========================================="
+echo "Training Complete!"
+echo "=========================================="
